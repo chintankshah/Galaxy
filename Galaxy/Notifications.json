@@ -1,0 +1,21 @@
+{
+    "notifications": [{
+                      "notificationType": 1,
+                      "notificationText": "New Ride \nOffice to Navi Mumbai \n20:30"
+                      },
+                      {
+                      "notificationType": 0,
+                      "notificationText": "Coco cola's new product launch in August"
+                      },
+                      {
+                      "notificationType": 2,
+                      "notificationText": "Lunch \n30th Floor @1:15 PM"
+                      },
+                      {
+                      "notificationType": 0,
+                      "notificationText": "Message from CEO\nStar has won the rights to telecast ICC Champions Trophy"
+                      }
+                      ]
+}
+                      
+              

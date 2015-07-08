@@ -1,0 +1,16 @@
+{
+    "list": [
+                   {
+                   "statusName": "Target Lead",
+                   "statusValue": "Target Lead"
+                   },
+                   {
+                   "statusName": "Hot",
+                   "statusValue": "Hot"
+                   },
+                   {
+                   "statusName": "Warm",
+                   "statusValue": "Warm"
+                   }
+                   ]
+}

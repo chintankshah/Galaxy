@@ -1,0 +1,44 @@
+{
+    "list": [
+             {
+             "firstName": "Aravind",
+             "lastName": "Kejriwal",
+             "email": "aravind@gmail.com"
+             },
+             {
+             "firstName": "Chintan",
+             "lastName": "Shah",
+             "email": "chintan@gmail.com"
+             },
+             {
+             "firstName": "Hardik",
+             "lastName": "Vasha",
+             "email": "hardik@gmail.com"
+             },
+             {
+             "firstName": "Vishal",
+             "lastName": "Dadlani",
+             "email": "vishal@gmail.com"
+             },
+             {
+             "firstName": "Mukta",
+             "lastName": "Bhatt",
+             "email": "mukta@gmail.com"
+             },
+             {
+             "firstName": "Ravi",
+             "lastName": "Vungarala",
+             "email": "ravi@gmail.com"
+             },
+             {
+             "firstName": "Siddharth",
+             "lastName": "Kumar",
+             "email": "sid@gmail.com"
+             },
+             {
+             "firstName": "Suresh",
+             "lastName": "Raina",
+             "email": "raina@gmail.com"
+             }
+             ]
+}

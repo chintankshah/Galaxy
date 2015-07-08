@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecordingTypeView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuN-k7-Y9T">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH8-Tf-Ke4">
+                            <rect key="frame" x="5" y="575" width="75" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="KZz-Cc-NQX"/>
+                                <constraint firstAttribute="width" constant="75" id="bKA-wl-u6P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfP-yg-9FK">
+                            <rect key="frame" x="275" y="275" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="5cY-ll-FDf"/>
+                                <constraint firstAttribute="width" constant="50" id="IFR-2w-loG"/>
+                            </constraints>
+                            <state key="normal" image="Play Filled-100.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.36470588240000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TH8-Tf-Ke4" secondAttribute="bottom" constant="5" id="Cip-85-W4H"/>
+                        <constraint firstAttribute="centerY" secondItem="RfP-yg-9FK" secondAttribute="centerY" id="LeP-OP-Ebr"/>
+                        <constraint firstItem="TH8-Tf-Ke4" firstAttribute="leading" secondItem="vuN-k7-Y9T" secondAttribute="leading" constant="5" id="X7C-hY-cVI"/>
+                        <constraint firstAttribute="centerX" secondItem="RfP-yg-9FK" secondAttribute="centerX" id="dPm-na-rIW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vuN-k7-Y9T" secondAttribute="bottom" id="KDk-8l-yaC"/>
+                <constraint firstItem="vuN-k7-Y9T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fbM-pw-HH4"/>
+                <constraint firstAttribute="trailing" secondItem="vuN-k7-Y9T" secondAttribute="trailing" id="svG-6T-DWh"/>
+                <constraint firstItem="vuN-k7-Y9T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vxT-yg-40i"/>
+            </constraints>
+            <connections>
+                <outlet property="playButton" destination="RfP-yg-9FK" id="0PU-Tw-NTT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Play Filled-100.png" width="100" height="100"/>
+    </resources>
+</document>

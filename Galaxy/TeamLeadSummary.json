@@ -1,0 +1,24 @@
+{
+    "team": [
+             {
+             "name": "Mukta",
+             "pitched": "12.5"
+             },
+             {"name": "Raj",
+             "pitched": "20"
+             },
+             {"name": "Neha",
+             "pitched": "15"
+             },
+             {"name": "Arvind",
+             "pitched": "22"
+             },
+             {"name": "Vaibhav",
+             "pitched": "18"
+             }
+             ],
+    "target": "125",
+    "remaining" : "37.5",
+    "pitched" : "87.5",
+    "currency" : "₹"
+}
