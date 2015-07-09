@@ -10,8 +10,10 @@
 #import "BaseViewController.h"
 #import "CustomersArrayModel.h"
 #import "CustomSegmentedControl.h"
+#import "CustomersCollectionViewCell.h"
 
-@interface CustomersViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate>
+
+@interface CustomersViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate, CustomersDelegate>
 
 @property (strong, nonatomic) CustomersArrayModel *customersList;
 

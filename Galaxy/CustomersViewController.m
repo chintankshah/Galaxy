@@ -12,7 +12,8 @@
 #import "CustomersModel.h"
 #import "CustomerProfileModel.h"
 #import "DataService.h"
-
+#import "CustomerDetailViewController.h"
+#import "AppDelegate.h"
 
 @interface CustomersViewController ()
 
@@ -28,15 +29,15 @@
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"CustomersCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CustomersCollectionViewCell"];
     
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 
 
 -(void)setupSegmentControl{
@@ -48,11 +49,13 @@
 #pragma CollectionView - Methods
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    NSLog(@"numberOfSectionsInCollectionView entered");
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    NSLog(@"numberOfItemsInSection entered");
     if(self.customersList != nil)
         return self.customersList.customers.count;
     else
@@ -61,13 +64,12 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     CustomersCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CustomersCollectionViewCell" forIndexPath:indexPath];
-    
+    cell.delegate = self;
     CustomersModel *customer = self.customersList.customers[indexPath.row];
-    [cell initializeCell:customer.profile forIndex:indexPath.row];
+    [cell initializeCell:customer.profile forIndex:(int) indexPath.row];
     
     return cell;
 }
-
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -93,17 +95,29 @@
 
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+-(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"willDisplayCell called");
+}
+
+-(void)didSelectCellAtIndex:(int)index{
+    CustomerDetailViewController *customerDetailViewController = [[CustomerDetailViewController alloc] init];
     
-//    LeadDetailViewController *leadDetailViewController = [[LeadDetailViewController alloc] init];
-//    leadDetailViewController.lead = (LeadModel *)self.leadArrayModel.leads[indexPath.row];
-//    
-//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    [appDelegate.navigationController pushViewController:leadDetailViewController animated:YES];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.navigationController pushViewController:customerDetailViewController animated:YES];
     
 }
 
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"didSelectItemAtIndexPath entered");
+    
+//    NSLog(@"clicked %ld", (long)indexPath.row);
+//    
+//    CustomerDetailViewController *customerDetailViewController = [[CustomerDetailViewController alloc] init];
+//    
+//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    [appDelegate.navigationController pushViewController:customerDetailViewController animated:YES];
+    
+}
 
 - (IBAction)toggleFilters:(id)sender {
     

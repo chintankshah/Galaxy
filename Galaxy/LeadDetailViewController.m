@@ -24,10 +24,6 @@
     
     [self initView];
     
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    
-    
     [self.tableView registerNib:[UINib nibWithNibName:@"LeadDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"LeadDetailTableViewCell"];
     
 

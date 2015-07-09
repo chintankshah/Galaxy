@@ -9,9 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "CustomerProfileModel.h"
 
+
+@protocol CustomersDelegate
+-(void) didSelectCellAtIndex: (int) index;
+@end
+
 @interface CustomersCollectionViewCell : UICollectionViewCell
 
 @property (assign, nonatomic) int index;
+@property (strong, nonatomic) id<CustomersDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UIView *cellContentView;
 

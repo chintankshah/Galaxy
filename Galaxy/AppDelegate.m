@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "CustomersViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,12 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    UIWindow *window = [[UIWindow alloc] initWithFrame:screenBounds];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     rootController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
     navigationController = [[UINavigationController alloc] initWithRootViewController:rootController];
-    
     
     [navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:(205.0/255.0) green:(30.0/255.0) blue:(32.0/255.0) alpha:1.0]];
     navigationController.navigationBar.translucent = NO;
@@ -34,9 +33,8 @@
     navigationController.navigationBarHidden = YES;
     
 
-    [window setRootViewController: navigationController];
-    [window makeKeyAndVisible];
-    [self setWindow:window];
+    [self.window setRootViewController: navigationController];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

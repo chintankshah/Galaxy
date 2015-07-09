@@ -13,7 +13,7 @@
 #import "LeadsCollectionViewCell.h"
 #import "CustomSegmentedControl.h"
 
-@interface LeadListViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, LeadDelegate, UIGestureRecognizerDelegate>
+@interface LeadListViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *mainView;
 @property (strong, nonatomic) IBOutlet CustomSegmentedControl *leadSegmentedControl;

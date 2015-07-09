@@ -1,25 +1,22 @@
 //
-//  BaseViewController.m
+//  CustomerDetailViewController.m
 //  Galaxy
 //
-//  Created by Shah, Chintan on 6/25/15.
+//  Created by Shah, Chintan on 7/9/15.
 //  Copyright (c) 2015 Shah, Chintan. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "CustomerDetailViewController.h"
 
-@interface BaseViewController ()
+@interface CustomerDetailViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation CustomerDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

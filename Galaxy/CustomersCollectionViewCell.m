@@ -16,7 +16,17 @@
 
 - (void)awakeFromNib {
     [self initCell];
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellTapped:)];
+    tapRecognizer.numberOfTapsRequired = 1;
+    [self addGestureRecognizer:tapRecognizer];
 }
+
+-(void)cellTapped:(UITapGestureRecognizer*) gestureRecognizer{
+    NSLog(@"cellTapped at index: %d", self.index);
+    [self.delegate didSelectCellAtIndex:self.index];
+}
+
 
 -(void)initCell{
     

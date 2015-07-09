@@ -10,12 +10,6 @@
 #import "LeadArrayModel.h"
 #import "LeadModel.h"
 
-@protocol LeadDelegate
-@optional
--(void)didSelectEditAtIndex:(int) index;
-@end
-
-
 @interface LeadsCollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UIImageView *image;
@@ -38,9 +32,6 @@
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *iconWidthConstraint;
 
-- (IBAction)toggleEditAction:(id)sender;
-
-@property (nonatomic, assign) id<LeadDelegate> delegate;
 @property int index;
 
 -(void)initializeCell: (LeadModel*)lead forIndex:(int)index;

@@ -29,13 +29,6 @@
     
     [self.collectionView registerNib:[UINib nibWithNibName:@"LeadsCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"LeadsCollectionViewCell"];
     
-    self.isCellEdited = NO;
-    self.selectedCell = -1;
-    
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,7 +59,6 @@
     LeadsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LeadsCollectionViewCell" forIndexPath:indexPath];
     
     [cell initializeCell:(LeadModel *)self.leadArrayModel.leads[indexPath.row] forIndex:(int)indexPath.row];
-    cell.delegate = self;
     
     return cell;
 }
@@ -157,28 +149,6 @@
 //        [self.collectionView reloadData];
     }];
 }
-
-#pragma LeadDelegate methods
-
--(void)didSelectEditAtIndex:(int)index{
-    
-    [self.collectionView performBatchUpdates:^{
-        
-        if(self.selectedCell == index){
-            self.isCellEdited = NO;
-            self.selectedCell = -1;
-        }else{
-            self.isCellEdited = YES;
-            self.selectedCell = index;
-        }
-        
-        [[self.collectionView collectionViewLayout] invalidateLayout];
-    } completion:^(BOOL finished) {
-        
-    }];
-    
-}
-
 
 #pragma Service Delegates
 

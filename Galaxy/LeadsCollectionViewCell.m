@@ -113,8 +113,4 @@
     
 }
 
-
-- (IBAction)toggleEditAction:(id)sender {
-//    [self.delegate didSelectEditAtIndex:self.index];
-}
 @end

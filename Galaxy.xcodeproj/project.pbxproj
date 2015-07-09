@@ -22,6 +22,8 @@
 		031712331B4D3AC500D453F9 /* CustomersArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712321B4D3AC500D453F9 /* CustomersArrayModel.m */; };
 		031712351B4D467300D453F9 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 031712341B4D467300D453F9 /* test.json */; };
 		031712391B4D83A100D453F9 /* CustomSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712381B4D83A100D453F9 /* CustomSegmentedControl.m */; };
+		031712461B4E394300D453F9 /* CustomerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712441B4E394300D453F9 /* CustomerDetailViewController.m */; };
+		031712471B4E394300D453F9 /* CustomerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031712451B4E394300D453F9 /* CustomerDetailViewController.xib */; };
 		03335D3E1B3A9713004CB4FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03335D3D1B3A9713004CB4FB /* main.m */; };
 		03335D411B3A9713004CB4FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03335D401B3A9713004CB4FB /* AppDelegate.m */; };
 		03335D491B3A9713004CB4FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03335D481B3A9713004CB4FB /* Images.xcassets */; };
@@ -212,6 +214,9 @@
 		031712341B4D467300D453F9 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		031712371B4D83A100D453F9 /* CustomSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentedControl.h; sourceTree = "<group>"; };
 		031712381B4D83A100D453F9 /* CustomSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentedControl.m; sourceTree = "<group>"; };
+		031712431B4E394300D453F9 /* CustomerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerDetailViewController.h; sourceTree = "<group>"; };
+		031712441B4E394300D453F9 /* CustomerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerDetailViewController.m; sourceTree = "<group>"; };
+		031712451B4E394300D453F9 /* CustomerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerDetailViewController.xib; sourceTree = "<group>"; };
 		03335D381B3A9713004CB4FB /* Galaxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Galaxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03335D3C1B3A9713004CB4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03335D3D1B3A9713004CB4FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -618,6 +623,93 @@
 			name = "Segmented Control";
 			sourceTree = "<group>";
 		};
+		0317123A1B4E381F00D453F9 /* Leads */ = {
+			isa = PBXGroup;
+			children = (
+				03C1D45E1B3FFAC300EBFD71 /* LeadViewController.h */,
+				03C1D45F1B3FFAC300EBFD71 /* LeadViewController.m */,
+				03C1D4601B3FFAC300EBFD71 /* LeadViewController.xib */,
+			);
+			name = Leads;
+			sourceTree = "<group>";
+		};
+		0317123B1B4E382A00D453F9 /* Leads */ = {
+			isa = PBXGroup;
+			children = (
+				03437A731B3D261B002E8B34 /* LeadListViewController.h */,
+				03437A741B3D261B002E8B34 /* LeadListViewController.m */,
+				03437A751B3D261B002E8B34 /* LeadListViewController.xib */,
+			);
+			name = Leads;
+			sourceTree = "<group>";
+		};
+		0317123C1B4E384700D453F9 /* Customers */ = {
+			isa = PBXGroup;
+			children = (
+				031712431B4E394300D453F9 /* CustomerDetailViewController.h */,
+				031712441B4E394300D453F9 /* CustomerDetailViewController.m */,
+				031712451B4E394300D453F9 /* CustomerDetailViewController.xib */,
+			);
+			name = Customers;
+			sourceTree = "<group>";
+		};
+		0317123D1B4E385100D453F9 /* Customers */ = {
+			isa = PBXGroup;
+			children = (
+				03C8B50B1B4BDCEB00F77246 /* CustomersViewController.h */,
+				03C8B50C1B4BDCEB00F77246 /* CustomersViewController.m */,
+				03C8B50D1B4BDCEB00F77246 /* CustomersViewController.xib */,
+			);
+			name = Customers;
+			sourceTree = "<group>";
+		};
+		0317123E1B4E386200D453F9 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				03335DD71B3B03BE004CB4FB /* DashboardViewController.h */,
+				03335DD81B3B03BE004CB4FB /* DashboardViewController.m */,
+				03335DD91B3B03BE004CB4FB /* DashboardViewController.xib */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		0317123F1B4E389200D453F9 /* Leads */ = {
+			isa = PBXGroup;
+			children = (
+				03C1D4451B3EBB2000EBFD71 /* LeadDetailViewController.h */,
+				03C1D4461B3EBB2000EBFD71 /* LeadDetailViewController.m */,
+				03C1D4471B3EBB2000EBFD71 /* LeadDetailViewController.xib */,
+				0369A2BD1B4A3C9C00954B94 /* LeadCreateViewController.h */,
+				0369A2BE1B4A3C9C00954B94 /* LeadCreateViewController.m */,
+				0369A2BF1B4A3C9C00954B94 /* LeadCreateViewController.xib */,
+			);
+			name = Leads;
+			sourceTree = "<group>";
+		};
+		031712401B4E389700D453F9 /* Customers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Customers;
+			sourceTree = "<group>";
+		};
+		031712411B4E38A500D453F9 /* Leads */ = {
+			isa = PBXGroup;
+			children = (
+				0369A2C31B4A404600954B94 /* LeadCreateStep2ViewController.h */,
+				0369A2C41B4A404600954B94 /* LeadCreateStep2ViewController.m */,
+				0369A2C51B4A404600954B94 /* LeadCreateStep2ViewController.xib */,
+			);
+			name = Leads;
+			sourceTree = "<group>";
+		};
+		031712421B4E38B500D453F9 /* Leads */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Leads;
+			sourceTree = "<group>";
+		};
 		03335D2F1B3A9713004CB4FB = {
 			isa = PBXGroup;
 			children = (
@@ -703,15 +795,9 @@
 		03335DD61B3B03AB004CB4FB /* Level 1 */ = {
 			isa = PBXGroup;
 			children = (
-				03335DD71B3B03BE004CB4FB /* DashboardViewController.h */,
-				03335DD81B3B03BE004CB4FB /* DashboardViewController.m */,
-				03335DD91B3B03BE004CB4FB /* DashboardViewController.xib */,
-				03C1D45E1B3FFAC300EBFD71 /* LeadViewController.h */,
-				03C1D45F1B3FFAC300EBFD71 /* LeadViewController.m */,
-				03C1D4601B3FFAC300EBFD71 /* LeadViewController.xib */,
-				03C8B50B1B4BDCEB00F77246 /* CustomersViewController.h */,
-				03C8B50C1B4BDCEB00F77246 /* CustomersViewController.m */,
-				03C8B50D1B4BDCEB00F77246 /* CustomersViewController.xib */,
+				0317123E1B4E386200D453F9 /* Dashboard */,
+				0317123D1B4E385100D453F9 /* Customers */,
+				0317123A1B4E381F00D453F9 /* Leads */,
 			);
 			name = "Level 1";
 			sourceTree = "<group>";
@@ -895,9 +981,7 @@
 		0369A2C21B4A403000954B94 /* Level 4 */ = {
 			isa = PBXGroup;
 			children = (
-				0369A2C31B4A404600954B94 /* LeadCreateStep2ViewController.h */,
-				0369A2C41B4A404600954B94 /* LeadCreateStep2ViewController.m */,
-				0369A2C51B4A404600954B94 /* LeadCreateStep2ViewController.xib */,
+				031712411B4E38A500D453F9 /* Leads */,
 			);
 			name = "Level 4";
 			sourceTree = "<group>";
@@ -908,6 +992,7 @@
 				0369A2C91B4A406100954B94 /* LeadCreateStep3ViewController.h */,
 				0369A2CA1B4A406100954B94 /* LeadCreateStep3ViewController.m */,
 				0369A2CB1B4A406100954B94 /* LeadCreateStep3ViewController.xib */,
+				031712421B4E38B500D453F9 /* Leads */,
 			);
 			name = "Level 5";
 			sourceTree = "<group>";
@@ -1070,9 +1155,8 @@
 		03C1D4441B3EBAD000EBFD71 /* Level 2 */ = {
 			isa = PBXGroup;
 			children = (
-				03437A731B3D261B002E8B34 /* LeadListViewController.h */,
-				03437A741B3D261B002E8B34 /* LeadListViewController.m */,
-				03437A751B3D261B002E8B34 /* LeadListViewController.xib */,
+				0317123C1B4E384700D453F9 /* Customers */,
+				0317123B1B4E382A00D453F9 /* Leads */,
 			);
 			name = "Level 2";
 			sourceTree = "<group>";
@@ -1098,12 +1182,8 @@
 		03C1D45A1B3FFA6500EBFD71 /* Level 3 */ = {
 			isa = PBXGroup;
 			children = (
-				03C1D4451B3EBB2000EBFD71 /* LeadDetailViewController.h */,
-				03C1D4461B3EBB2000EBFD71 /* LeadDetailViewController.m */,
-				03C1D4471B3EBB2000EBFD71 /* LeadDetailViewController.xib */,
-				0369A2BD1B4A3C9C00954B94 /* LeadCreateViewController.h */,
-				0369A2BE1B4A3C9C00954B94 /* LeadCreateViewController.m */,
-				0369A2BF1B4A3C9C00954B94 /* LeadCreateViewController.xib */,
+				031712401B4E389700D453F9 /* Customers */,
+				0317123F1B4E389200D453F9 /* Leads */,
 			);
 			name = "Level 3";
 			sourceTree = "<group>";
@@ -1375,6 +1455,7 @@
 				03412F141B43F38800459FBF /* RSS-100.png in Resources */,
 				03C1D4491B3EBB2000EBFD71 /* LeadDetailViewController.xib in Resources */,
 				03412F151B43F38800459FBF /* Combo Chart-100.png in Resources */,
+				031712471B4E394300D453F9 /* CustomerDetailViewController.xib in Resources */,
 				03412F1F1B441F7800459FBF /* MyLeadsView.xib in Resources */,
 				03412EFB1B43AC7C00459FBF /* Car-100.png in Resources */,
 				03615F601B4A9E62004C7F7F /* LeadSource.json in Resources */,
@@ -1438,6 +1519,7 @@
 			files = (
 				03C1D4381B3DC94100EBFD71 /* LeadModel.m in Sources */,
 				031712391B4D83A100D453F9 /* CustomSegmentedControl.m in Sources */,
+				031712461B4E394300D453F9 /* CustomerDetailViewController.m in Sources */,
 				03C1D42E1B3DC15000EBFD71 /* JSONValueTransformer.m in Sources */,
 				036452091B45BA9A0042DDA2 /* RecordingTypeView.m in Sources */,
 				03C1D4B91B41757A00EBFD71 /* LeadsNotesTypeCollectionViewCell.m in Sources */,
