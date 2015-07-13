@@ -201,7 +201,6 @@
 - (void)textField:(MPGTextField *)textField didEndEditingWithSelection:(NSDictionary *)result
 {
     NSLog(@"didEndEditingWithSelection called");
-    
 }
 
 
@@ -244,6 +243,7 @@
 }
 
 - (IBAction)nextAction:(id)sender {
+    [self.view endEditing:YES];
     LeadCreateStep3ViewController *step3Controller = [[LeadCreateStep3ViewController alloc] init];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];

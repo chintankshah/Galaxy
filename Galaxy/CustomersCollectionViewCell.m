@@ -23,7 +23,6 @@
 }
 
 -(void)cellTapped:(UITapGestureRecognizer*) gestureRecognizer{
-    NSLog(@"cellTapped at index: %d", self.index);
     [self.delegate didSelectCellAtIndex:self.index];
 }
 

@@ -51,8 +51,6 @@ bool menuOpened = NO;
     
 }
 
-
-
 -(void)setupMenu{
     
     [self.menu registerNib:[UINib nibWithNibName:@"MenuTableViewCell" bundle:nil] forCellReuseIdentifier:@"MenuTableViewCell"];

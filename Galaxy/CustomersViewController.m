@@ -49,13 +49,11 @@
 #pragma CollectionView - Methods
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    NSLog(@"numberOfSectionsInCollectionView entered");
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    NSLog(@"numberOfItemsInSection entered");
     if(self.customersList != nil)
         return self.customersList.customers.count;
     else
@@ -95,27 +93,12 @@
 
 }
 
--(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"willDisplayCell called");
-}
-
 -(void)didSelectCellAtIndex:(int)index{
     CustomerDetailViewController *customerDetailViewController = [[CustomerDetailViewController alloc] init];
+    customerDetailViewController.customer = self.customersList.customers[index];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:customerDetailViewController animated:YES];
-    
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"didSelectItemAtIndexPath entered");
-    
-//    NSLog(@"clicked %ld", (long)indexPath.row);
-//    
-//    CustomerDetailViewController *customerDetailViewController = [[CustomerDetailViewController alloc] init];
-//    
-//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    [appDelegate.navigationController pushViewController:customerDetailViewController animated:YES];
     
 }
 

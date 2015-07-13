@@ -114,7 +114,7 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    self.activeField = nil;
+    [self.view endEditing:YES];
 }
 
 
@@ -138,6 +138,7 @@
 
 
 - (IBAction)nextAction:(id)sender {
+    [self.view endEditing:YES];
     LeadCreateStep2ViewController *step2Controller = [[LeadCreateStep2ViewController alloc] init];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];

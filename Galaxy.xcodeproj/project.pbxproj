@@ -24,6 +24,14 @@
 		031712391B4D83A100D453F9 /* CustomSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712381B4D83A100D453F9 /* CustomSegmentedControl.m */; };
 		031712461B4E394300D453F9 /* CustomerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712441B4E394300D453F9 /* CustomerDetailViewController.m */; };
 		031712471B4E394300D453F9 /* CustomerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031712451B4E394300D453F9 /* CustomerDetailViewController.xib */; };
+		0317124B1B4F9DB800D453F9 /* CustomerProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0317124A1B4F9DB800D453F9 /* CustomerProfileView.m */; };
+		0317124D1B4F9DC300D453F9 /* CustomerProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0317124C1B4F9DC300D453F9 /* CustomerProfileView.xib */; };
+		031712501B4F9DD600D453F9 /* CustomerHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0317124F1B4F9DD600D453F9 /* CustomerHistoryView.m */; };
+		031712521B4F9DDF00D453F9 /* CustomerHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031712511B4F9DDF00D453F9 /* CustomerHistoryView.xib */; };
+		031712551B4F9DFD00D453F9 /* CustomerContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712541B4F9DFD00D453F9 /* CustomerContactView.m */; };
+		031712571B4F9E0800D453F9 /* CustomerContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031712561B4F9E0800D453F9 /* CustomerContactView.xib */; };
+		0317125A1B4F9E1600D453F9 /* CustomerNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 031712591B4F9E1600D453F9 /* CustomerNewsView.m */; };
+		0317125C1B4F9E1D00D453F9 /* CustomerNewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0317125B1B4F9E1D00D453F9 /* CustomerNewsView.xib */; };
 		03335D3E1B3A9713004CB4FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03335D3D1B3A9713004CB4FB /* main.m */; };
 		03335D411B3A9713004CB4FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03335D401B3A9713004CB4FB /* AppDelegate.m */; };
 		03335D491B3A9713004CB4FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03335D481B3A9713004CB4FB /* Images.xcassets */; };
@@ -175,6 +183,10 @@
 		03C8B50A1B4AEC3900F77246 /* Checkmark Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C8B5091B4AEC3900F77246 /* Checkmark Filled-50.png */; };
 		03C8B50E1B4BDCEB00F77246 /* CustomersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C8B50C1B4BDCEB00F77246 /* CustomersViewController.m */; };
 		03C8B50F1B4BDCEB00F77246 /* CustomersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C8B50D1B4BDCEB00F77246 /* CustomersViewController.xib */; };
+		03D83C6A1B53A3D100792474 /* CustomerDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C691B53A3D100792474 /* CustomerDetailView.m */; };
+		03E6558F1B5398DB00DB33E8 /* Clock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558C1B5398DB00DB33E8 /* Clock-50.png */; };
+		03E655901B5398DB00DB33E8 /* Info-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558D1B5398DB00DB33E8 /* Info-50.png */; };
+		03E655911B5398DB00DB33E8 /* News Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558E1B5398DB00DB33E8 /* News Filled-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +229,18 @@
 		031712431B4E394300D453F9 /* CustomerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerDetailViewController.h; sourceTree = "<group>"; };
 		031712441B4E394300D453F9 /* CustomerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerDetailViewController.m; sourceTree = "<group>"; };
 		031712451B4E394300D453F9 /* CustomerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerDetailViewController.xib; sourceTree = "<group>"; };
+		031712491B4F9DB800D453F9 /* CustomerProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerProfileView.h; sourceTree = "<group>"; };
+		0317124A1B4F9DB800D453F9 /* CustomerProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerProfileView.m; sourceTree = "<group>"; };
+		0317124C1B4F9DC300D453F9 /* CustomerProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerProfileView.xib; sourceTree = "<group>"; };
+		0317124E1B4F9DD600D453F9 /* CustomerHistoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerHistoryView.h; sourceTree = "<group>"; };
+		0317124F1B4F9DD600D453F9 /* CustomerHistoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerHistoryView.m; sourceTree = "<group>"; };
+		031712511B4F9DDF00D453F9 /* CustomerHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerHistoryView.xib; sourceTree = "<group>"; };
+		031712531B4F9DFD00D453F9 /* CustomerContactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerContactView.h; sourceTree = "<group>"; };
+		031712541B4F9DFD00D453F9 /* CustomerContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerContactView.m; sourceTree = "<group>"; };
+		031712561B4F9E0800D453F9 /* CustomerContactView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerContactView.xib; sourceTree = "<group>"; };
+		031712581B4F9E1600D453F9 /* CustomerNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerNewsView.h; sourceTree = "<group>"; };
+		031712591B4F9E1600D453F9 /* CustomerNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerNewsView.m; sourceTree = "<group>"; };
+		0317125B1B4F9E1D00D453F9 /* CustomerNewsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerNewsView.xib; sourceTree = "<group>"; };
 		03335D381B3A9713004CB4FB /* Galaxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Galaxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03335D3C1B3A9713004CB4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03335D3D1B3A9713004CB4FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -505,6 +529,11 @@
 		03C8B50B1B4BDCEB00F77246 /* CustomersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomersViewController.h; sourceTree = "<group>"; };
 		03C8B50C1B4BDCEB00F77246 /* CustomersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomersViewController.m; sourceTree = "<group>"; };
 		03C8B50D1B4BDCEB00F77246 /* CustomersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomersViewController.xib; sourceTree = "<group>"; };
+		03D83C681B53A3D100792474 /* CustomerDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerDetailView.h; sourceTree = "<group>"; };
+		03D83C691B53A3D100792474 /* CustomerDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerDetailView.m; sourceTree = "<group>"; };
+		03E6558C1B5398DB00DB33E8 /* Clock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-50.png"; sourceTree = "<group>"; };
+		03E6558D1B5398DB00DB33E8 /* Info-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-50.png"; sourceTree = "<group>"; };
+		03E6558E1B5398DB00DB33E8 /* News Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News Filled-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -708,6 +737,27 @@
 			children = (
 			);
 			name = Leads;
+			sourceTree = "<group>";
+		};
+		031712481B4F9D8400D453F9 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				031712491B4F9DB800D453F9 /* CustomerProfileView.h */,
+				0317124A1B4F9DB800D453F9 /* CustomerProfileView.m */,
+				0317124C1B4F9DC300D453F9 /* CustomerProfileView.xib */,
+				0317124E1B4F9DD600D453F9 /* CustomerHistoryView.h */,
+				0317124F1B4F9DD600D453F9 /* CustomerHistoryView.m */,
+				031712511B4F9DDF00D453F9 /* CustomerHistoryView.xib */,
+				031712531B4F9DFD00D453F9 /* CustomerContactView.h */,
+				031712541B4F9DFD00D453F9 /* CustomerContactView.m */,
+				031712561B4F9E0800D453F9 /* CustomerContactView.xib */,
+				031712581B4F9E1600D453F9 /* CustomerNewsView.h */,
+				031712591B4F9E1600D453F9 /* CustomerNewsView.m */,
+				0317125B1B4F9E1D00D453F9 /* CustomerNewsView.xib */,
+				03D83C681B53A3D100792474 /* CustomerDetailView.h */,
+				03D83C691B53A3D100792474 /* CustomerDetailView.m */,
+			);
+			name = Customer;
 			sourceTree = "<group>";
 		};
 		03335D2F1B3A9713004CB4FB = {
@@ -1191,6 +1241,9 @@
 		03C1D4771B410F0800EBFD71 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				03E6558C1B5398DB00DB33E8 /* Clock-50.png */,
+				03E6558D1B5398DB00DB33E8 /* Info-50.png */,
+				03E6558E1B5398DB00DB33E8 /* News Filled-50.png */,
 				0317120A1B4C2BD500D453F9 /* Location Filled-50.png */,
 				03C8B5091B4AEC3900F77246 /* Checkmark Filled-50.png */,
 				0369A2D41B4A689B00954B94 /* Speech Bubble Filled-100.png */,
@@ -1295,6 +1348,7 @@
 		03C1D4F91B4310C000EBFD71 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				031712481B4F9D8400D453F9 /* Customer */,
 				03412F1A1B441EEF00459FBF /* Leads */,
 				03C1D4FA1B4310CB00EBFD71 /* Dashboard */,
 			);
@@ -1404,6 +1458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C1D4A61B41285B00EBFD71 /* 2.jpeg in Resources */,
+				03E655901B5398DB00DB33E8 /* Info-50.png in Resources */,
 				03C1D4A31B41285B00EBFD71 /* 6.jpeg in Resources */,
 				03C1D4DD1B42794600EBFD71 /* Play Filled-100.png in Resources */,
 				03412F181B43F38800459FBF /* Group-100.png in Resources */,
@@ -1415,10 +1470,12 @@
 				0317120B1B4C2BD500D453F9 /* Location Filled-50.png in Resources */,
 				03C1D4621B3FFAC300EBFD71 /* LeadViewController.xib in Resources */,
 				03C1D4661B4005F300EBFD71 /* blue_hex.png in Resources */,
+				0317124D1B4F9DC300D453F9 /* CustomerProfileView.xib in Resources */,
 				03C1D4421B3E762000EBFD71 /* avatar.png in Resources */,
 				0369A2CD1B4A406100954B94 /* LeadCreateStep3ViewController.xib in Resources */,
 				03C1D4731B410F0300EBFD71 /* More Filled-100.png in Resources */,
 				03412F131B43F38800459FBF /* Dancing Filled-100.png in Resources */,
+				03E6558F1B5398DB00DB33E8 /* Clock-50.png in Resources */,
 				036452061B45B6710042DDA2 /* NotesTypeView.xib in Resources */,
 				031712351B4D467300D453F9 /* test.json in Resources */,
 				03412EF31B43ABBB00459FBF /* NotificationsTableViewCell.xib in Resources */,
@@ -1436,6 +1493,8 @@
 				03412F161B43F38800459FBF /* Elevator-100.png in Resources */,
 				0369A2C71B4A404600954B94 /* LeadCreateStep2ViewController.xib in Resources */,
 				03C1D4EA1B4296BF00EBFD71 /* Car Pool.jpg in Resources */,
+				03E655911B5398DB00DB33E8 /* News Filled-50.png in Resources */,
+				031712521B4F9DDF00D453F9 /* CustomerHistoryView.xib in Resources */,
 				03412EFE1B43B8BF00459FBF /* Full Moon-100.png in Resources */,
 				03C1D4871B4115EE00EBFD71 /* Temperature-100.png in Resources */,
 				03437A771B3D261B002E8B34 /* LeadListViewController.xib in Resources */,
@@ -1466,6 +1525,7 @@
 				03335DDB1B3B03BE004CB4FB /* DashboardViewController.xib in Resources */,
 				03C1D4EB1B4296BF00EBFD71 /* Splash Screen.jpg in Resources */,
 				03412FB81B459E9000459FBF /* MyLeadSummary.json in Resources */,
+				031712571B4F9E0800D453F9 /* CustomerContactView.xib in Resources */,
 				03C1D4411B3E762000EBFD71 /* chintan.jpg in Resources */,
 				03C1D4AF1B4151EC00EBFD71 /* Micro Filled-100.png in Resources */,
 				03C1D46D1B40135A00EBFD71 /* brown_hex.png in Resources */,
@@ -1477,6 +1537,7 @@
 				0369A2D31B4A56C400954B94 /* Forward-100.png in Resources */,
 				03C1D46C1B40135A00EBFD71 /* violet_hex.png in Resources */,
 				03C1D4791B41116200EBFD71 /* Plus-100.png in Resources */,
+				0317125C1B4F9E1D00D453F9 /* CustomerNewsView.xib in Resources */,
 				03C1D4BA1B41757A00EBFD71 /* LeadsNotesTypeCollectionViewCell.xib in Resources */,
 				03C1D4EC1B4296BF00EBFD71 /* Eco Impact.jpg in Resources */,
 				03C1D4A51B41285B00EBFD71 /* 3.jpg in Resources */,
@@ -1519,10 +1580,13 @@
 			files = (
 				03C1D4381B3DC94100EBFD71 /* LeadModel.m in Sources */,
 				031712391B4D83A100D453F9 /* CustomSegmentedControl.m in Sources */,
+				0317124B1B4F9DB800D453F9 /* CustomerProfileView.m in Sources */,
 				031712461B4E394300D453F9 /* CustomerDetailViewController.m in Sources */,
 				03C1D42E1B3DC15000EBFD71 /* JSONValueTransformer.m in Sources */,
+				031712551B4F9DFD00D453F9 /* CustomerContactView.m in Sources */,
 				036452091B45BA9A0042DDA2 /* RecordingTypeView.m in Sources */,
 				03C1D4B91B41757A00EBFD71 /* LeadsNotesTypeCollectionViewCell.m in Sources */,
+				0317125A1B4F9E1600D453F9 /* CustomerNewsView.m in Sources */,
 				03615F691B4AA119004C7F7F /* LeadSourceModel.m in Sources */,
 				03C1D42B1B3DC15000EBFD71 /* JSONHTTPClient.m in Sources */,
 				03335D411B3A9713004CB4FB /* AppDelegate.m in Sources */,
@@ -1555,6 +1619,7 @@
 				03C1D43C1B3E50B200EBFD71 /* DataService.m in Sources */,
 				031712301B4D2A7800D453F9 /* CustomersModel.m in Sources */,
 				03C1D42C1B3DC15000EBFD71 /* JSONModel+networking.m in Sources */,
+				031712501B4F9DD600D453F9 /* CustomerHistoryView.m in Sources */,
 				03C1D4281B3DC15000EBFD71 /* JSONModelError.m in Sources */,
 				03412F241B44618D00459FBF /* TeamLeadsView.m in Sources */,
 				03412EF21B43ABBB00459FBF /* NotificationsTableViewCell.m in Sources */,
@@ -1568,6 +1633,7 @@
 				03C1D4271B3DC15000EBFD71 /* JSONModelClassProperty.m in Sources */,
 				03C1D4C41B41A9E800EBFD71 /* LeadDetailTableViewCell.m in Sources */,
 				03C1D4551B3FF8E000EBFD71 /* LeadsHexButton.m in Sources */,
+				03D83C6A1B53A3D100792474 /* CustomerDetailView.m in Sources */,
 				03C8B5001B4AD68000F77246 /* MPGTextField.m in Sources */,
 				03C1D4D61B425DF200EBFD71 /* LeadDetailCollectionView.m in Sources */,
 				031712261B4D28E900D453F9 /* CustomerFeedModel.m in Sources */,
