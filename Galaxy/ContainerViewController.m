@@ -42,17 +42,12 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    NSLog(@"Entering initWithNibName with nibNameOrNil: %@", nibNameOrNil);
     self.child = (BaseViewController*) [[NSClassFromString(nibNameOrNil) alloc] initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if (self.child) {
-        NSLog(@"found child controller");
         
-        if (self.dataObject != nil) {
-            NSLog(@"found data object !! Now setting to BaseController");
+        if (self.dataObject != nil)
             self.child.dataObject = self.dataObject;
-        }else
-            NSLog(@"dataObject is nil");
         
         [self addChildViewController:self.child];
     }
@@ -62,11 +57,8 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil dataObject:(id) dataObject
 {
-    if (dataObject != nil) {
-        NSLog(@"found data object !! Now setting to BaseViewController");
+    if (dataObject != nil)
         self.dataObject = dataObject;
-    }else
-        NSLog(@"dataObject is nil");
     
     return [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 }
@@ -135,15 +127,12 @@
                 //do nothing
                 
             }else{
-                
-                
+                                
                 self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x;
                 self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x + 20;
                 self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width+translation.x;
                 
             }
-            
-            
             
         }
     }
