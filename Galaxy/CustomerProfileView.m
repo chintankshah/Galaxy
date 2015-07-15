@@ -13,7 +13,6 @@
 
 - (void)drawRect:(CGRect)rect {
     
-    NSLog(@"Enternig drawRect of CustomerProfileView");
     [super drawRect:rect];
     [super drawTriangle:0];
     

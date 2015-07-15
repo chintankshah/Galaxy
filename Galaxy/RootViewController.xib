@@ -11,6 +11,7 @@
                 <outlet property="menu" destination="6Ki-1b-RTU" id="bJC-im-jqk"/>
                 <outlet property="menuButton" destination="bKr-N0-fVf" id="p3z-jm-jev"/>
                 <outlet property="menuHeightConstraint" destination="4oJ-HR-MVF" id="s9G-tN-C02"/>
+                <outlet property="menuOverlay" destination="1Bv-BP-OeL" id="owQ-Br-V35"/>
                 <outlet property="menuTrailingConstraint" destination="3D3-lU-WRD" id="FZB-Az-teI"/>
                 <outlet property="menuWidthConstraint" destination="Bcb-JC-mig" id="ZGM-cB-9Tb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,6 +25,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-Sr-aYn">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-BP-OeL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6Ki-1b-RTU">
                     <rect key="frame" x="260" y="210" width="320" height="300"/>
@@ -57,12 +62,16 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="bKr-N0-fVf" secondAttribute="trailing" constant="15" id="3D3-lU-WRD"/>
+                <constraint firstAttribute="bottom" secondItem="1Bv-BP-OeL" secondAttribute="bottom" id="8zm-iJ-QC1"/>
+                <constraint firstAttribute="trailing" secondItem="1Bv-BP-OeL" secondAttribute="trailing" id="CmC-hS-ejy"/>
+                <constraint firstItem="1Bv-BP-OeL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HDY-ob-Rsv"/>
                 <constraint firstItem="fK5-Sr-aYn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QwO-DO-Bmx"/>
                 <constraint firstItem="6Ki-1b-RTU" firstAttribute="trailing" secondItem="bKr-N0-fVf" secondAttribute="trailing" constant="-5" id="RYP-wd-FAQ"/>
                 <constraint firstItem="fK5-Sr-aYn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YFJ-9T-Vvw"/>
                 <constraint firstAttribute="bottom" secondItem="fK5-Sr-aYn" secondAttribute="bottom" id="cYv-CU-Uly"/>
                 <constraint firstAttribute="trailing" secondItem="fK5-Sr-aYn" secondAttribute="trailing" id="hUP-o6-cY9"/>
                 <constraint firstAttribute="bottom" secondItem="6Ki-1b-RTU" secondAttribute="bottom" constant="90" id="lSC-N5-ooe"/>
+                <constraint firstItem="1Bv-BP-OeL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u48-9r-VKb"/>
                 <constraint firstAttribute="bottom" secondItem="bKr-N0-fVf" secondAttribute="bottom" constant="15" id="uLA-6J-BGG"/>
             </constraints>
             <point key="canvasLocation" x="146" y="122"/>

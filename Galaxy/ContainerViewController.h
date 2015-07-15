@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "CalendarView.h"
 
 @interface ContainerViewController : UIViewController<UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *wrapperView;
+@property (strong, nonatomic) IBOutlet UIView *sideView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *sideViewWidthConstraint;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewLeadingConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewTrailingConstraint;

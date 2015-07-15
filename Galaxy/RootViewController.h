@@ -15,6 +15,9 @@
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UITableView *menu;
+@property (strong, nonatomic) IBOutlet UIView *menuOverlay;
+
+
 @property (strong, nonatomic) ContainerViewController *containerViewController;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuTrailingConstraint;

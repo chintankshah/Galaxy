@@ -32,12 +32,37 @@
     self.child.view.bounds = self.wrapperView.bounds;
     [self addViewToWrapperView:self.child.view];
     
+    [self addCalendarView];
+    
     globalPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGlobalPanGesture:)];
     [self.wrapperView addGestureRecognizer:globalPanGesture];
     
     if (self.navigationController!=nil)
         [globalPanGesture requireGestureRecognizerToFail:self.navigationController.interactivePopGestureRecognizer];
     
+}
+
+-(void)addCalendarView{
+    
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    self.sideViewWidthConstraint.constant = screenHeight-RIGHT_GESTURE_LIMIT;
+    
+    NSArray *bundleObjects;
+    bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"CalendarView" owner:self options:nil];
+    CalendarView *calendarView;
+    for (id object in bundleObjects) {
+        if ([object isKindOfClass:[CalendarView class]]){
+            calendarView = (CalendarView *)object;
+            break;
+        }
+    }
+    
+    CGRect bounds = [UIScreen mainScreen].bounds;
+    bounds.size.width -= RIGHT_GESTURE_LIMIT;
+    
+    calendarView.frame = bounds;
+    
+    [self.sideView addSubview:calendarView];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -127,7 +152,7 @@
                 //do nothing
                 
             }else{
-                                
+                
                 self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x;
                 self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x + 20;
                 self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width+translation.x;

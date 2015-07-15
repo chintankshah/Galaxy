@@ -27,22 +27,19 @@ bool menuOpened = NO;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.menuItems = [[NSArray alloc] initWithObjects:@"CUSTOMERS",@"LEADS",@"GREEN MILES",@"LIFT",@"FEEDS", @"FUN @ WORK", nil];
-    
-    self.menuButton.layer.cornerRadius = self.menuButton.bounds.size.width/2.0;
-    
     [self setupMenu];
     
-    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
-    [self.contentView addGestureRecognizer:self.tapGesture];
-    
-    //    [self loadContentViewWith:@"DashboardViewController"];
+//    [self loadContentViewWith:@"DashboardViewController"];
     [self loadContentViewWith:@"CustomersViewController"];
 //    [self loadContentViewWith:@"LeadViewController"];
     
 }
 
 -(void)setupMenu{
+    
+    self.menuItems = [[NSArray alloc] initWithObjects:@"CUSTOMERS",@"LEADS",@"GREEN MILES",@"LIFT",@"FEEDS", @"FUN @ WORK", nil];
+    self.menuButton.layer.cornerRadius = self.menuButton.bounds.size.width/2.0;
+    self.menuOverlay.hidden = YES;
     
     [self.menu registerNib:[UINib nibWithNibName:@"MenuTableViewCell" bundle:nil] forCellReuseIdentifier:@"MenuTableViewCell"];
     
@@ -70,6 +67,9 @@ bool menuOpened = NO;
     [self.menuButton addSubview:view];
     [self.menuButton addSubview:view2];
     [self.menuButton addSubview:view3];
+    
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    [self.menuOverlay addGestureRecognizer:self.tapGesture];
     
 }
 
@@ -130,6 +130,7 @@ bool menuOpened = NO;
         }
         [self.view layoutIfNeeded];
         menuOpened = !menuOpened;
+        self.menuOverlay.hidden = !menuOpened;
     }];
     
 }

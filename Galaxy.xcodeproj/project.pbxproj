@@ -186,6 +186,8 @@
 		03D83C6A1B53A3D100792474 /* CustomerDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C691B53A3D100792474 /* CustomerDetailView.m */; };
 		03D83C761B5655B700792474 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C741B5655B700792474 /* BaseViewController.m */; };
 		03D83C771B5655B700792474 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D83C751B5655B700792474 /* BaseViewController.xib */; };
+		03D83C7B1B56694200792474 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C7A1B56694200792474 /* CalendarView.m */; };
+		03D83C7D1B56695000792474 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D83C7C1B56695000792474 /* CalendarView.xib */; };
 		03E6558F1B5398DB00DB33E8 /* Clock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558C1B5398DB00DB33E8 /* Clock-50.png */; };
 		03E655901B5398DB00DB33E8 /* Info-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558D1B5398DB00DB33E8 /* Info-50.png */; };
 		03E655911B5398DB00DB33E8 /* News Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558E1B5398DB00DB33E8 /* News Filled-50.png */; };
@@ -536,6 +538,9 @@
 		03D83C731B5655B700792474 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		03D83C741B5655B700792474 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		03D83C751B5655B700792474 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		03D83C791B56694200792474 /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
+		03D83C7A1B56694200792474 /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
+		03D83C7C1B56695000792474 /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		03E6558C1B5398DB00DB33E8 /* Clock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-50.png"; sourceTree = "<group>"; };
 		03E6558D1B5398DB00DB33E8 /* Info-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-50.png"; sourceTree = "<group>"; };
 		03E6558E1B5398DB00DB33E8 /* News Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News Filled-50.png"; sourceTree = "<group>"; };
@@ -1356,6 +1361,7 @@
 		03C1D4F91B4310C000EBFD71 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				03D83C781B5668F900792474 /* Common */,
 				031712481B4F9D8400D453F9 /* Customer */,
 				03412F1A1B441EEF00459FBF /* Leads */,
 				03C1D4FA1B4310CB00EBFD71 /* Dashboard */,
@@ -1383,6 +1389,16 @@
 				03C8B4FF1B4AD68000F77246 /* MPGTextField.m */,
 			);
 			path = MPGTextField;
+			sourceTree = "<group>";
+		};
+		03D83C781B5668F900792474 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				03D83C791B56694200792474 /* CalendarView.h */,
+				03D83C7A1B56694200792474 /* CalendarView.m */,
+				03D83C7C1B56695000792474 /* CalendarView.xib */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1509,6 +1525,7 @@
 				03C8B50A1B4AEC3900F77246 /* Checkmark Filled-50.png in Resources */,
 				03412F171B43F38800459FBF /* Car Filled-100.png in Resources */,
 				03C1D4A11B41285B00EBFD71 /* 7.jpeg in Resources */,
+				03D83C7D1B56695000792474 /* CalendarView.xib in Resources */,
 				03C1D46E1B40135A00EBFD71 /* red_hex.png in Resources */,
 				03C1D4821B4115EE00EBFD71 /* Message Filled-100.png in Resources */,
 				03C1D4AC1B4151EC00EBFD71 /* SLR Camera-100.png in Resources */,
@@ -1653,6 +1670,7 @@
 				03615F6C1B4AA154004C7F7F /* LeadSourceArrayModel.m in Sources */,
 				03335DDA1B3B03BE004CB4FB /* DashboardViewController.m in Sources */,
 				0369A2CC1B4A406100954B94 /* LeadCreateStep3ViewController.m in Sources */,
+				03D83C7B1B56694200792474 /* CalendarView.m in Sources */,
 				03C8B5081B4AD8BD00F77246 /* EmployeeListModel.m in Sources */,
 				031712171B4D210000D453F9 /* CustomerProfileModel.m in Sources */,
 				0369A2DC1B4A833B00954B94 /* LeadStatusModel.m in Sources */,
