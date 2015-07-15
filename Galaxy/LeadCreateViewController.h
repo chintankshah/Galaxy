@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface LeadCreateViewController : UIViewController <UITextFieldDelegate>
+@interface LeadCreateViewController : BaseViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollHeightConstraint;

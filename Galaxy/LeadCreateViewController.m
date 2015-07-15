@@ -139,7 +139,8 @@
 
 - (IBAction)nextAction:(id)sender {
     [self.view endEditing:YES];
-    LeadCreateStep2ViewController *step2Controller = [[LeadCreateStep2ViewController alloc] init];
+
+    ContainerViewController *step2Controller = [[ContainerViewController alloc] initWithNibName:@"LeadCreateStep2ViewController" bundle:nil];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:step2Controller animated:YES];

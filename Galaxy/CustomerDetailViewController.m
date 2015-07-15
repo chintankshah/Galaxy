@@ -22,12 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (self.dataObject != nil)
+        self.customer = (CustomersModel *) self.dataObject;
+
+    
     [self.contentView setAlpha:0.5];
     
     [self initViews];
     [self.containerView addSubview:self.profileView];
     [self addConstraints:self.profileView];
     self.currentView = PROFILE_VIEW_INDEX;
+    
     
 }
 

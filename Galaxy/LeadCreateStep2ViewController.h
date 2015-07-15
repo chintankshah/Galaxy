@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 #import "LeadStatusArrayModel.h"
 #import "IQDropDownTextField.h"
 #import "MPGTextField.h"
 
-@interface LeadCreateStep2ViewController : UIViewController<UITextFieldDelegate, MPGTextFieldDelegate>
+@interface LeadCreateStep2ViewController : BaseViewController<UITextFieldDelegate, MPGTextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollViewHeightConstraint;
@@ -23,7 +24,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *headingLabel;
 @property (strong, nonatomic) IBOutlet UILabel *SubHeadingLabel;
 @property (strong, nonatomic) IBOutlet UILabel *pageTitle;
-
 
 
 @property (strong, nonatomic) IBOutlet UIButton *callButton;

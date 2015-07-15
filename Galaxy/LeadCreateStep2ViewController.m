@@ -244,7 +244,8 @@
 
 - (IBAction)nextAction:(id)sender {
     [self.view endEditing:YES];
-    LeadCreateStep3ViewController *step3Controller = [[LeadCreateStep3ViewController alloc] init];
+    
+    ContainerViewController *step3Controller = [[ContainerViewController alloc] initWithNibName:@"LeadCreateStep3ViewController" bundle:nil];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:step3Controller animated:YES];

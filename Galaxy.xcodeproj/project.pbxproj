@@ -71,8 +71,8 @@
 		03412FBB1B459FA100459FBF /* MyLeadSummaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03412FBA1B459FA100459FBF /* MyLeadSummaryModel.m */; };
 		03412FBE1B45A03400459FBF /* TeamLeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03412FBD1B45A03400459FBF /* TeamLeadModel.m */; };
 		03412FC11B45A09A00459FBF /* TeamLeadSummaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03412FC01B45A09A00459FBF /* TeamLeadSummaryModel.m */; };
-		03437A711B3BDA3F002E8B34 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03437A6F1B3BDA3F002E8B34 /* BaseViewController.m */; };
-		03437A721B3BDA3F002E8B34 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03437A701B3BDA3F002E8B34 /* BaseViewController.xib */; };
+		03437A711B3BDA3F002E8B34 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03437A6F1B3BDA3F002E8B34 /* ContainerViewController.m */; };
+		03437A721B3BDA3F002E8B34 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03437A701B3BDA3F002E8B34 /* ContainerViewController.xib */; };
 		03437A761B3D261B002E8B34 /* LeadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03437A741B3D261B002E8B34 /* LeadListViewController.m */; };
 		03437A771B3D261B002E8B34 /* LeadListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03437A751B3D261B002E8B34 /* LeadListViewController.xib */; };
 		03615F601B4A9E62004C7F7F /* LeadSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 03615F5F1B4A9E62004C7F7F /* LeadSource.json */; };
@@ -184,6 +184,8 @@
 		03C8B50E1B4BDCEB00F77246 /* CustomersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C8B50C1B4BDCEB00F77246 /* CustomersViewController.m */; };
 		03C8B50F1B4BDCEB00F77246 /* CustomersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C8B50D1B4BDCEB00F77246 /* CustomersViewController.xib */; };
 		03D83C6A1B53A3D100792474 /* CustomerDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C691B53A3D100792474 /* CustomerDetailView.m */; };
+		03D83C761B5655B700792474 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C741B5655B700792474 /* BaseViewController.m */; };
+		03D83C771B5655B700792474 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D83C751B5655B700792474 /* BaseViewController.xib */; };
 		03E6558F1B5398DB00DB33E8 /* Clock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558C1B5398DB00DB33E8 /* Clock-50.png */; };
 		03E655901B5398DB00DB33E8 /* Info-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558D1B5398DB00DB33E8 /* Info-50.png */; };
 		03E655911B5398DB00DB33E8 /* News Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558E1B5398DB00DB33E8 /* News Filled-50.png */; };
@@ -374,9 +376,9 @@
 		03412FBD1B45A03400459FBF /* TeamLeadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamLeadModel.m; sourceTree = "<group>"; };
 		03412FBF1B45A09A00459FBF /* TeamLeadSummaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamLeadSummaryModel.h; sourceTree = "<group>"; };
 		03412FC01B45A09A00459FBF /* TeamLeadSummaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamLeadSummaryModel.m; sourceTree = "<group>"; };
-		03437A6E1B3BDA3F002E8B34 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		03437A6F1B3BDA3F002E8B34 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		03437A701B3BDA3F002E8B34 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		03437A6E1B3BDA3F002E8B34 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		03437A6F1B3BDA3F002E8B34 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		03437A701B3BDA3F002E8B34 /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
 		03437A731B3D261B002E8B34 /* LeadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadListViewController.h; sourceTree = "<group>"; };
 		03437A741B3D261B002E8B34 /* LeadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadListViewController.m; sourceTree = "<group>"; };
 		03437A751B3D261B002E8B34 /* LeadListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeadListViewController.xib; sourceTree = "<group>"; };
@@ -531,6 +533,9 @@
 		03C8B50D1B4BDCEB00F77246 /* CustomersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomersViewController.xib; sourceTree = "<group>"; };
 		03D83C681B53A3D100792474 /* CustomerDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerDetailView.h; sourceTree = "<group>"; };
 		03D83C691B53A3D100792474 /* CustomerDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerDetailView.m; sourceTree = "<group>"; };
+		03D83C731B5655B700792474 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		03D83C741B5655B700792474 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		03D83C751B5655B700792474 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		03E6558C1B5398DB00DB33E8 /* Clock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-50.png"; sourceTree = "<group>"; };
 		03E6558D1B5398DB00DB33E8 /* Info-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-50.png"; sourceTree = "<group>"; };
 		03E6558E1B5398DB00DB33E8 /* News Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News Filled-50.png"; sourceTree = "<group>"; };
@@ -835,9 +840,12 @@
 				03335DD11B3AB6D6004CB4FB /* RootViewController.h */,
 				03335DD21B3AB6D6004CB4FB /* RootViewController.m */,
 				03335DD31B3AB6D6004CB4FB /* RootViewController.xib */,
-				03437A6E1B3BDA3F002E8B34 /* BaseViewController.h */,
-				03437A6F1B3BDA3F002E8B34 /* BaseViewController.m */,
-				03437A701B3BDA3F002E8B34 /* BaseViewController.xib */,
+				03437A6E1B3BDA3F002E8B34 /* ContainerViewController.h */,
+				03437A6F1B3BDA3F002E8B34 /* ContainerViewController.m */,
+				03437A701B3BDA3F002E8B34 /* ContainerViewController.xib */,
+				03D83C731B5655B700792474 /* BaseViewController.h */,
+				03D83C741B5655B700792474 /* BaseViewController.m */,
+				03D83C751B5655B700792474 /* BaseViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1489,7 +1497,7 @@
 				03C1D4A71B41285B00EBFD71 /* 1.jpeg in Resources */,
 				03C1D4E91B4296BF00EBFD71 /* Dashboard Background.jpg in Resources */,
 				03C1D49F1B41285B00EBFD71 /* 9.jpg in Resources */,
-				03437A721B3BDA3F002E8B34 /* BaseViewController.xib in Resources */,
+				03437A721B3BDA3F002E8B34 /* ContainerViewController.xib in Resources */,
 				03412F161B43F38800459FBF /* Elevator-100.png in Resources */,
 				0369A2C71B4A404600954B94 /* LeadCreateStep2ViewController.xib in Resources */,
 				03C1D4EA1B4296BF00EBFD71 /* Car Pool.jpg in Resources */,
@@ -1506,6 +1514,7 @@
 				03C1D4AC1B4151EC00EBFD71 /* SLR Camera-100.png in Resources */,
 				03C1D4741B410F0300EBFD71 /* Plus Math-100.png in Resources */,
 				03C1D49E1B41285B00EBFD71 /* 10.jpg in Resources */,
+				03D83C771B5655B700792474 /* BaseViewController.xib in Resources */,
 				03335D491B3A9713004CB4FB /* Images.xcassets in Resources */,
 				03C1D40A1B3DC05F00EBFD71 /* Leads.json in Resources */,
 				03412F0C1B43CE7F00459FBF /* MenuTableViewCell.xib in Resources */,
@@ -1602,7 +1611,7 @@
 				0369A2D11B4A4BE900954B94 /* CustomTextField.m in Sources */,
 				03C1D42D1B3DC15000EBFD71 /* JSONKeyMapper.m in Sources */,
 				03C1D4251B3DC15000EBFD71 /* JSONModel.m in Sources */,
-				03437A711B3BDA3F002E8B34 /* BaseViewController.m in Sources */,
+				03437A711B3BDA3F002E8B34 /* ContainerViewController.m in Sources */,
 				03C8B5051B4AD88300F77246 /* EmployeeModel.m in Sources */,
 				03412F031B43BCF700459FBF /* NotificationModel.m in Sources */,
 				031712081B4C0CD600D453F9 /* CustomersCollectionViewCell.m in Sources */,
@@ -1622,6 +1631,7 @@
 				031712501B4F9DD600D453F9 /* CustomerHistoryView.m in Sources */,
 				03C1D4281B3DC15000EBFD71 /* JSONModelError.m in Sources */,
 				03412F241B44618D00459FBF /* TeamLeadsView.m in Sources */,
+				03D83C761B5655B700792474 /* BaseViewController.m in Sources */,
 				03412EF21B43ABBB00459FBF /* NotificationsTableViewCell.m in Sources */,
 				0369A2C01B4A3C9C00954B94 /* LeadCreateViewController.m in Sources */,
 				03412FBE1B45A03400459FBF /* TeamLeadModel.m in Sources */,

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 #import "CustomersArrayModel.h"
 #import "CustomSegmentedControl.h"
 #import "CustomersCollectionViewCell.h"
+#import "BaseViewController.h"
 
 
 @interface CustomersViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate, CustomersDelegate>

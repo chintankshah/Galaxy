@@ -172,9 +172,7 @@
 
 - (void)myLeadsAction:(id)sender {
     
-    NSLog(@"myLeadsAction delegate method called");
-    
-    LeadListViewController *leadListController = [[LeadListViewController alloc] init];
+    ContainerViewController *leadListController = [[ContainerViewController alloc] initWithNibName:@"LeadListViewController" bundle:nil];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:leadListController animated:YES];

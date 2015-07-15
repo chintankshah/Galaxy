@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 #import "NotificationsView.h"
 #import "NotificationArrayModel.h"
 #import "UpcomingMeetingModel.h"
+#import "BaseViewController.h"
 
-@interface DashboardViewController : BaseViewController <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface DashboardViewController : UIViewController <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UIView *firstContainer;
 @property (strong, nonatomic) IBOutlet UIView *secondContainer;

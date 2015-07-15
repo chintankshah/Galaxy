@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DashboardViewController.h"
+#import "ContainerViewController.h"
 
 @interface RootViewController : UIViewController <UIGestureRecognizerDelegate, UITableViewDataSource, UITableViewDelegate>
 
@@ -15,16 +15,13 @@
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UITableView *menu;
-@property (strong, nonatomic) BaseViewController *contentViewController;
+@property (strong, nonatomic) ContainerViewController *containerViewController;
 
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewLeadingConstraint;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewTrailingConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuTrailingConstraint;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuHeightConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuWidthConstraint;
 
-@property (strong, nonatomic) UIPanGestureRecognizer *globalPanGesture;
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
 
 

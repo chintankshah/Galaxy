@@ -39,7 +39,6 @@
 }
 
 
-
 -(void)setupSegmentControl{
     
     [self.segmentedControl setWidth:180 forSegmentAtIndex:0];
@@ -94,8 +93,10 @@
 }
 
 -(void)didSelectCellAtIndex:(int)index{
-    CustomerDetailViewController *customerDetailViewController = [[CustomerDetailViewController alloc] init];
-    customerDetailViewController.customer = self.customersList.customers[index];
+    
+    id dataObject = self.customersList.customers[index];
+    
+    ContainerViewController *customerDetailViewController = [[ContainerViewController alloc] initWithNibName:@"CustomerDetailViewController" bundle:nil dataObject:dataObject];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:customerDetailViewController animated:YES];

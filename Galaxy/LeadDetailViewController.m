@@ -24,6 +24,10 @@
     
     [self initView];
     
+    if (self.dataObject != nil)
+        self.lead = (LeadModel *) self.dataObject;
+    
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"LeadDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"LeadDetailTableViewCell"];
     
 

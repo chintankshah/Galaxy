@@ -11,8 +11,6 @@
 #import "LeadArrayModel.h"
 #import "LeadModel.h"
 #import "LeadsCollectionViewCell.h"
-#import "LeadDetailViewController.h"
-#import "LeadCreateViewController.h"
 #import "AppDelegate.h"
 
 @interface LeadListViewController ()
@@ -89,8 +87,9 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    LeadDetailViewController *leadDetailViewController = [[LeadDetailViewController alloc] init];
-    leadDetailViewController.lead = (LeadModel *)self.leadArrayModel.leads[indexPath.row];
+    id dataObject = (LeadModel *)self.leadArrayModel.leads[indexPath.row];
+    
+    ContainerViewController *leadDetailViewController = [[ContainerViewController alloc] initWithNibName:@"LeadDetailViewController" bundle:nil dataObject:dataObject];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:leadDetailViewController animated:YES];
@@ -118,7 +117,7 @@
 
 - (IBAction)addLeadAction:(id)sender {
     
-    LeadCreateViewController *leadCreateViewController = [[LeadCreateViewController alloc] init];
+    ContainerViewController *leadCreateViewController = [[ContainerViewController alloc] initWithNibName:@"LeadCreateViewController" bundle:nil];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.navigationController pushViewController:leadCreateViewController animated:YES];

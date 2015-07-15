@@ -22,12 +22,7 @@
 #define MENU_HEIGHT_IPHONE4_AND_BELOW 40
 
 bool menuOpened = NO;
-
-@synthesize globalPanGesture;
-@synthesize contentViewLeadingConstraint;
-@synthesize contentViewTrailingConstraint;
 @synthesize menuTrailingConstraint;
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,10 +32,6 @@ bool menuOpened = NO;
     self.menuButton.layer.cornerRadius = self.menuButton.bounds.size.width/2.0;
     
     [self setupMenu];
-    
-    globalPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGlobalPanGesture:)];
-    [self.contentView addGestureRecognizer:globalPanGesture];
-    
     
     self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     [self.contentView addGestureRecognizer:self.tapGesture];
@@ -233,134 +224,10 @@ bool menuOpened = NO;
 
 }
 
-
--(void)handleGlobalPanGesture:(UIPanGestureRecognizer*)gestureRecognizer{
-
-    if(menuOpened){
-        [self toggleMenu:self];
-    }
-    
-    CGPoint screenLocation = [gestureRecognizer locationInView:self.view];
-    CGPoint location = [gestureRecognizer locationInView:gestureRecognizer.view];
-    CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
-    CGPoint velocity = [gestureRecognizer velocityInView:gestureRecognizer.view];
-   
-//    NSLog(@"screenLocation.x : %f", screenLocation.x);
-//    NSLog(@"location.x : %f", location.x);
-//    NSLog(@"translation.x : %f", translation.x);
-    
-    if(velocity.x > 1500){
-        //close right menu
-        
-        self.contentViewTrailingConstraint.constant = 0;
-        self.menuTrailingConstraint.constant = 20;
-        self.contentViewLeadingConstraint.constant = 0;
-        
-    }
-    
-    if(velocity.x < -1500){
-        //open right menu
-        
-        self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
-        self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT + 20;
-        self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width;
-                
-    }
-    
-    
-    if(gestureRecognizer.state == UIGestureRecognizerStateChanged && (location.x >= (self.view.bounds.size.width - RIGHT_GESTURE_LIMIT))){
-        
-        //transition effect for opening right menu
-        if(translation.x < 0
-           && self.view.bounds.size.width+translation.x > RIGHT_GESTURE_LIMIT
-           && self.contentViewTrailingConstraint.constant != self.view.bounds.size.width-RIGHT_GESTURE_LIMIT){
-            
-            if(screenLocation.x < RIGHT_GESTURE_LIMIT
-               && -translation.x < RIGHT_GESTURE_LIMIT){
-                
-                //do nothing
-                
-            }else{
-                
-                self.contentViewTrailingConstraint.constant = -translation.x;
-                self.menuTrailingConstraint.constant = -translation.x + 20;
-                self.contentViewLeadingConstraint.constant = translation.x;
-                
-            }
-            
-            
-        }
-        
-       
-        //transition effect for closing right menu
-        if(translation.x > 0
-           && self.view.bounds.size.width-translation.x > RIGHT_GESTURE_LIMIT
-           && self.contentViewTrailingConstraint.constant > 0){
-            
-            if (screenLocation.x > self.view.bounds.size.width-RIGHT_GESTURE_LIMIT
-                && self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x > RIGHT_GESTURE_LIMIT) {
-                
-                //do nothing
-                
-            }else{
-                
-                
-                self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x;
-                self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x + 20;
-                self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width+translation.x;
-                
-            }
-            
-            
-            
-        }
-    }
-    
-    
-    if (gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateFailed) {
-        
-        //open right menu completely
-        if(self.contentViewTrailingConstraint.constant > (self.view.bounds.size.width)/2
-           && self.contentViewTrailingConstraint.constant != self.view.bounds.size.width-RIGHT_GESTURE_LIMIT){
-            
-            [UIView animateWithDuration:0.2 animations:^{
-                
-                self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
-                self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT + 20;
-                self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width;
-                
-                [self.view layoutIfNeeded];
-                
-            }];
-
-            
-        }else if(self.contentViewTrailingConstraint.constant <= (self.view.bounds.size.width)/2
-                 && self.contentViewTrailingConstraint.constant != 0){
-            //close right menu completely
-            
-            [UIView animateWithDuration:0.2 animations:^{
-                
-                self.contentViewTrailingConstraint.constant = 0;
-                self.menuTrailingConstraint.constant = 20;
-                self.contentViewLeadingConstraint.constant = 0;
-                
-                [self.view layoutIfNeeded];
-                
-            }];
-        }
-
-    }
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
 }
-
-//-(void)viewDidLayoutSubviews{
-//    NSLog(@"device width: %f height: %f ", self.view.bounds.size.width, self.view.bounds.size.height);
-//}
 
 -(BOOL)prefersStatusBarHidden{
     return YES;
@@ -373,23 +240,11 @@ bool menuOpened = NO;
     return NO;
 }
 
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 -(void)loadContentViewWith:(NSString *)nib{
     
     //create view controller from nib
-    self.contentViewController = [[NSClassFromString(nib) alloc] initWithNibName:nib bundle:nil];
     
+    self.containerViewController = [[ContainerViewController alloc] initWithNibName:nib bundle:nil];
     
     //remove already existing sub view if exist
     NSArray *viewsToRemove = [self.contentView subviews];
@@ -398,11 +253,11 @@ bool menuOpened = NO;
     }
     
     //add the present view and set the frame height
-    [self.contentView addSubview:[self.contentViewController view]];
-    CGRect childFrame = [self.contentViewController view].frame;
+    [self.contentView addSubview:[self.containerViewController view]];
+    CGRect childFrame = [self.containerViewController view].frame;
     childFrame.size.height = self.contentView.frame.size.height;
     childFrame.size.width = self.contentView.frame.size.width;
-    self.contentViewController.view.frame = childFrame;
+    self.containerViewController.view.frame = childFrame;
 }
 
 @end

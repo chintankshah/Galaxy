@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 #import "IQDropDownTextField.h"
 
-@interface LeadCreateStep3ViewController : UIViewController
+@interface LeadCreateStep3ViewController : BaseViewController
 
 @property (strong, nonatomic) UITextField *activeField;
 
