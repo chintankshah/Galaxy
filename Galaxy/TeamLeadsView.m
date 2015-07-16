@@ -24,9 +24,6 @@
 - (void)initView{
     // Drawing code
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    
-    NSLog(@"drawRect screenHeight: %f screenWidth: %f", screenHeight, screenWidth);
     
     //for iPhone 4s, iPhone 5 and iPhone 5
     if(screenHeight < 600){

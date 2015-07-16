@@ -305,6 +305,7 @@
             
             if(self.secondContainerLeadingSpace.constant > SECOND_CONTAINER_LEADING_SPACE){
                 self.secondContainerLeadingSpace.constant = self.view.bounds.size.width + translation.x;
+                self.secondContainerTrailingSpace.constant = -(self.view.bounds.size.width - SECOND_CONTAINER_LEADING_SPACE + translation.x);
                 self.showSecondContainerTrailingSpace.constant = -translation.x;
             }
             
@@ -331,6 +332,8 @@
                 [UIView animateWithDuration:0.2 animations:^{
                     
                     [[self secondContainerLeadingSpace] setConstant: self.view.bounds.size.width];
+                    [[self secondContainerTrailingSpace] setConstant: -(self.view.bounds.size.width-SECOND_CONTAINER_LEADING_SPACE)];
+                    
                     [[self showSecondContainerTrailingSpace] setConstant:0];
                     [self.showSecondContainer setHidden:NO];
                     
@@ -351,6 +354,8 @@
                 [UIView animateWithDuration:0.2 animations:^{
                     
                     [[self secondContainerLeadingSpace] setConstant: SECOND_CONTAINER_LEADING_SPACE];
+                    [[self secondContainerTrailingSpace] setConstant: 0];
+                    
                     [self.view layoutIfNeeded];
                     
                 }];
@@ -410,6 +415,8 @@
         //close second container completely
         
         [[self secondContainerLeadingSpace] setConstant: self.view.bounds.size.width];
+        [[self secondContainerTrailingSpace] setConstant: -(self.view.bounds.size.width-SECOND_CONTAINER_LEADING_SPACE)];
+        
         [[self thirdContainerLeadingSpace] setConstant: self.view.bounds.size.width];
         
         [[self showSecondContainerTrailingSpace] setConstant:0];
@@ -426,8 +433,10 @@
     } else if (translation.x > 0 && gestureRecognizer.state == UIGestureRecognizerStateChanged) {
         //transition effect while closing second container
         
-        if(self.secondContainerLeadingSpace.constant != self.view.bounds.size.width)
+        if(self.secondContainerLeadingSpace.constant != self.view.bounds.size.width){
             self.secondContainerLeadingSpace.constant = SECOND_CONTAINER_LEADING_SPACE + translation.x;
+            self.secondContainerTrailingSpace.constant = -translation.x;
+        }
         
         if(self.thirdContainerLeadingSpace.constant != self.view.bounds.size.width)
             self.thirdContainerLeadingSpace.constant = THIRD_CONTAINER_LEADING_SPACE + translation.x;
@@ -441,6 +450,8 @@
             [UIView animateWithDuration:0.2 animations:^{
                 
                 [[self secondContainerLeadingSpace] setConstant: self.view.bounds.size.width];
+                [[self secondContainerTrailingSpace] setConstant: -(self.view.bounds.size.width-SECOND_CONTAINER_LEADING_SPACE)];
+                
                 [[self thirdContainerLeadingSpace] setConstant: self.view.bounds.size.width];
                 
                 [[self showSecondContainerTrailingSpace] setConstant:0];

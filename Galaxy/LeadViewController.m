@@ -41,9 +41,6 @@
 
 -(void)upDateSizeAndFonts{
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    
-    NSLog(@"screenHeight: %f screenWidth: %f", screenHeight, screenWidth);
     
     //for iPhone 4s, iPhone 5 and iPhone 5
     if(screenHeight < 600){

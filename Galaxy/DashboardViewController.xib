@@ -17,12 +17,14 @@
                 <outlet property="notificationLabel" destination="Fot-Rn-hZ9" id="iHM-pM-OwD"/>
                 <outlet property="secondContainer" destination="RzC-s4-K4r" id="a9o-Xd-aVH"/>
                 <outlet property="secondContainerLeadingSpace" destination="gdi-Se-CFS" id="62i-mT-LSr"/>
+                <outlet property="secondContainerTrailingSpace" destination="v8j-gO-tjq" id="7Nf-Zg-7XI"/>
                 <outlet property="showSecondContainer" destination="xhr-WY-my2" id="bp6-JT-0qU"/>
                 <outlet property="showSecondContainerTrailingSpace" destination="sFE-mH-YJ1" id="Zuh-Fa-7bd"/>
                 <outlet property="showThirdContainer" destination="nNg-cg-joO" id="b5R-ND-2jB"/>
                 <outlet property="showThirdContainerTrailingSpace" destination="loO-7D-bpW" id="Aua-0j-nts"/>
                 <outlet property="thirdContainer" destination="8Yo-SJ-Xlb" id="YM9-Vf-5dC"/>
                 <outlet property="thirdContainerLeadingSpace" destination="J9A-q0-CMj" id="McY-9y-gFE"/>
+                <outlet property="thirdContainerTrailingSpace" destination="HSA-yD-MvN" id="5dO-k5-V8a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="voiceCommandLabel" destination="FK3-zO-lPy" id="gRP-0X-bh8"/>
                 <outlet property="wishLabel" destination="4z7-fa-iYb" id="8dL-U9-bGG"/>

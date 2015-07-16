@@ -22,7 +22,11 @@
 @property (strong, nonatomic) IBOutlet UIButton *showThirdContainer;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *secondContainerLeadingSpace;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *secondContainerTrailingSpace;
+
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *thirdContainerLeadingSpace;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *thirdContainerTrailingSpace;
+
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *showSecondContainerTrailingSpace;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *showThirdContainerTrailingSpace;
