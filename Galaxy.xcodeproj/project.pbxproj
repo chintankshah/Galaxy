@@ -65,7 +65,6 @@
 		03412F261B4461A100459FBF /* TeamLeadsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03412F251B4461A100459FBF /* TeamLeadsView.xib */; };
 		03412F551B45079700459FBF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03412F541B45079700459FBF /* QuartzCore.framework */; };
 		03412F571B45079D00459FBF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03412F561B45079D00459FBF /* Accelerate.framework */; };
-		03412FAA1B450B9700459FBF /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03412FA91B450B9700459FBF /* libCorePlot-CocoaTouch.a */; };
 		03412FB41B459E4200459FBF /* TeamLeadSummary.json in Resources */ = {isa = PBXBuildFile; fileRef = 03412FB31B459E4200459FBF /* TeamLeadSummary.json */; };
 		03412FB81B459E9000459FBF /* MyLeadSummary.json in Resources */ = {isa = PBXBuildFile; fileRef = 03412FB71B459E9000459FBF /* MyLeadSummary.json */; };
 		03412FBB1B459FA100459FBF /* MyLeadSummaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03412FBA1B459FA100459FBF /* MyLeadSummaryModel.m */; };
@@ -188,6 +187,7 @@
 		03D83C771B5655B700792474 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D83C751B5655B700792474 /* BaseViewController.xib */; };
 		03D83C7B1B56694200792474 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D83C7A1B56694200792474 /* CalendarView.m */; };
 		03D83C7D1B56695000792474 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D83C7C1B56695000792474 /* CalendarView.xib */; };
+		03D83C941B5775B700792474 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03412FA91B450B9700459FBF /* libCorePlot-CocoaTouch.a */; };
 		03E6558F1B5398DB00DB33E8 /* Clock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558C1B5398DB00DB33E8 /* Clock-50.png */; };
 		03E655901B5398DB00DB33E8 /* Info-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558D1B5398DB00DB33E8 /* Info-50.png */; };
 		03E655911B5398DB00DB33E8 /* News Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E6558E1B5398DB00DB33E8 /* News Filled-50.png */; };
@@ -551,9 +551,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D83C941B5775B700792474 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				03412F571B45079D00459FBF /* Accelerate.framework in Frameworks */,
 				03412F551B45079700459FBF /* QuartzCore.framework in Frameworks */,
-				03412FAA1B450B9700459FBF /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -294,7 +294,7 @@
                   {
                   "profile" : {
                   "name": "Coca Cola",
-                  "campaignValue": "67.35 L",
+                  "campaignValue": "67.3 L",
                   "currency": "₹",
                   "contact": "+91-9884265337",
                   "email": "support@nestle.com",
@@ -334,6 +334,1946 @@
                         "leadName" : "Anil Kumar",
                         "campaignName" : "Fanta Apple Flavor",
                         "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Nestle",
+                  "campaignValue": "76.9 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "AB Agency",
+                  "campaignValue": "13.2 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@abagency.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 0,
+                  "isAgent" : 1,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 0,
+                  "accountsCount" : 7,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Britania",
+                  "campaignValue": "98.5 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@britania.com",
+                  "preferredContactType": 2,
+                  "isMyCustomer": 0,
+                  "isAgent" : 0,
+                  "distance" : "12 KMs away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Coca Cola",
+                  "campaignValue": "67.3 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Nestle",
+                  "campaignValue": "76.9 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "AB Agency",
+                  "campaignValue": "13.2 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@abagency.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 0,
+                  "isAgent" : 1,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 0,
+                  "accountsCount" : 7,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Britania",
+                  "campaignValue": "98.5 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@britania.com",
+                  "preferredContactType": 2,
+                  "isMyCustomer": 0,
+                  "isAgent" : 0,
+                  "distance" : "12 KMs away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Coca Cola",
+                  "campaignValue": "67.3 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Nestle",
+                  "campaignValue": "76.9 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "AB Agency",
+                  "campaignValue": "13.2 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@abagency.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 0,
+                  "isAgent" : 1,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 0,
+                  "accountsCount" : 7,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Britania",
+                  "campaignValue": "98.5 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@britania.com",
+                  "preferredContactType": 2,
+                  "isMyCustomer": 0,
+                  "isAgent" : 0,
+                  "distance" : "12 KMs away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Coca Cola",
+                  "campaignValue": "67.3 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Nestle",
+                  "campaignValue": "76.9 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "AB Agency",
+                  "campaignValue": "13.2 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@abagency.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 0,
+                  "isAgent" : 1,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 0,
+                  "accountsCount" : 7,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Britania",
+                  "campaignValue": "98.5 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@britania.com",
+                  "preferredContactType": 2,
+                  "isMyCustomer": 0,
+                  "isAgent" : 0,
+                  "distance" : "12 KMs away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Coca Cola",
+                  "campaignValue": "67.3 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Nestle",
+                  "campaignValue": "76.9 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "AB Agency",
+                  "campaignValue": "13.2 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@abagency.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 0,
+                  "isAgent" : 1,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 0,
+                  "accountsCount" : 7,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Britania",
+                  "campaignValue": "98.5 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@britania.com",
+                  "preferredContactType": 2,
+                  "isMyCustomer": 0,
+                  "isAgent" : 0,
+                  "distance" : "12 KMs away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
+                  }
+                  },
+                  "contacts" : [{
+                                "name" : "Anil Kumar",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "anil@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Chandra Reddy",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "chandra@gmail.com",
+                                "preferredContactType" : 0
+                                },{
+                                "name" : "Deepti Rajan",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "deepti@gmail.com",
+                                "preferredContactType" : 1
+                                },{
+                                "name" : "Santosh Pandit",
+                                "phoneNumber" : "+91-9887632517",
+                                "email" : "santosh@gmail.com",
+                                "preferredContactType" : 0
+                                }
+                                ],
+                  "news" : [{
+                            "date" : "28 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "Introducing new #fanta\n #CocaColaIndia \nEnjoy the apple flavour"
+                                       }
+                                       ]
+                            },
+                            {
+                            "date" : "27 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "#CreatYourOwnAd - Join the league by creating your own ad"
+                                       },
+                                       {
+                                       "type" : 0,
+                                       "text" : "@Flashy_Knicks Thanks for getting involved :) #cokemyname http://name.shareacoke.com/ "
+                                       }
+                                       ]
+                            },{
+                            "date" : "26 June 2015",
+                            "feeds" : [{
+                                       "type" : 0,
+                                       "text" : "It’s raining stars and strikes! #USA scores to take the lead 1 - 0 over #CHN "
+                                       }
+                                       ]
+                            }
+                            ]
+                  
+                  },
+                  {
+                  "profile" : {
+                  "name": "Coca Cola",
+                  "campaignValue": "67.3 L",
+                  "currency": "₹",
+                  "contact": "+91-9884265337",
+                  "email": "support@nestle.com",
+                  "preferredContactType": 1,
+                  "isMyCustomer": 1,
+                  "isAgent" : 0,
+                  "distance" : "1KM away",
+                  "budgeted" : "78.35 L",
+                  "pitched" : "88.15 L",
+                  
+                  "recentlyPitched" : [{
+                                       "year" : "2012",
+                                       "pitched" : "84.5 L"
+                                       },
+                                       {
+                                       "year" : "2013",
+                                       "pitched" : "89.5 L"
+                                       },
+                                       {
+                                       "year" : "2014",
+                                       "pitched" : "79 L"
+                                       }],
+                  "productCount" : 3,
+                  "accountsCount" : 0,
+                  "leadCount" : 5
+                  },
+                  "history" : {
+                  "won" : 792,
+                  "queued" : 124,
+                  "rejected" : 302,
+                  "successRate" : 62,
+                  "newLeads" : 5,
+                  "openProposals" : 2,
+                  "closed" : 12,
+                  "lastDeal" : {
+                  "date" : "23 days ago",
+                  "leadName" : "Anil Kumar",
+                  "campaignName" : "Fanta Apple Flavor",
+                  "campaignDuration" : "00:00:25"
                   }
                   },
                   "contacts" : [{
