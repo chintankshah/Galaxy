@@ -30,8 +30,8 @@ bool menuOpened = NO;
     [self setupMenu];
     
 //    [self loadContentViewWith:@"DashboardViewController"];
-    [self loadContentViewWith:@"CustomersViewController"];
-//    [self loadContentViewWith:@"LeadViewController"];
+//    [self loadContentViewWith:@"CustomersViewController"];
+    [self loadContentViewWith:@"LeadViewController"];
     
 }
 

@@ -10,6 +10,13 @@
 #import "LeadsHexButton.h"
 #import "MyLeadSummaryModel.h"
 
+@protocol QuarterScrollDelegate
+
+-(void)showPrevious;
+-(void)showNext;
+
+@end
+
 @protocol MyLeadsViewDelegate
 
 -(void)myLeadsAction:(id)sender;
@@ -17,6 +24,8 @@
 @end
 
 @interface MyLeadsView : UIView
+
+@property (strong, nonatomic) IBOutlet UICollectionView *quarterCollectionView;
 
 @property (strong, nonatomic) IBOutlet LeadsHexButton *pitchedButton;
 @property (strong, nonatomic) IBOutlet LeadsHexButton *inProposalButton;
@@ -47,10 +56,12 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *view2TopConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *view3TopConstraint;
 
-@property (strong, nonatomic) id<MyLeadsViewDelegate> delegate;
+@property (strong, nonatomic) id<MyLeadsViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, QuarterScrollDelegate> delegate;
 
 - (IBAction)myLeadsAction:(id)sender;
 
 -(void)initWithLeadSummaryModel:(MyLeadSummaryModel*) myLeadSummaryModel;
 
+- (IBAction)leftAction:(id)sender;
+- (IBAction)rightAction:(id)sender;
 @end

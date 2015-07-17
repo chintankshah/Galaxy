@@ -97,6 +97,8 @@
 		0369A2DC1B4A833B00954B94 /* LeadStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369A2DB1B4A833B00954B94 /* LeadStatusModel.m */; };
 		0369A2DF1B4A839900954B94 /* LeadStatusArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369A2DE1B4A839900954B94 /* LeadStatusArrayModel.m */; };
 		0369A2E31B4A8D3C00954B94 /* IQDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369A2E21B4A8D3C00954B94 /* IQDropDownTextField.m */; };
+		03B6EDC61B591EAE00F35903 /* Left 4-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B6EDC41B591EAE00F35903 /* Left 4-50.png */; };
+		03B6EDC71B591EAE00F35903 /* Right 4-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B6EDC51B591EAE00F35903 /* Right 4-50.png */; };
 		03C1D4061B3DBB2F00EBFD71 /* LeadsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C1D4041B3DBB2F00EBFD71 /* LeadsCollectionViewCell.m */; };
 		03C1D4071B3DBB2F00EBFD71 /* LeadsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C1D4051B3DBB2F00EBFD71 /* LeadsCollectionViewCell.xib */; };
 		03C1D40A1B3DC05F00EBFD71 /* Leads.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C1D4091B3DC05F00EBFD71 /* Leads.json */; };
@@ -419,6 +421,8 @@
 		0369A2DE1B4A839900954B94 /* LeadStatusArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadStatusArrayModel.m; sourceTree = "<group>"; };
 		0369A2E11B4A8D3C00954B94 /* IQDropDownTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQDropDownTextField.h; sourceTree = "<group>"; };
 		0369A2E21B4A8D3C00954B94 /* IQDropDownTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQDropDownTextField.m; sourceTree = "<group>"; };
+		03B6EDC41B591EAE00F35903 /* Left 4-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left 4-50.png"; sourceTree = "<group>"; };
+		03B6EDC51B591EAE00F35903 /* Right 4-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Right 4-50.png"; sourceTree = "<group>"; };
 		03C1D4031B3DBB2F00EBFD71 /* LeadsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadsCollectionViewCell.h; sourceTree = "<group>"; };
 		03C1D4041B3DBB2F00EBFD71 /* LeadsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadsCollectionViewCell.m; sourceTree = "<group>"; };
 		03C1D4051B3DBB2F00EBFD71 /* LeadsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeadsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1246,6 +1250,8 @@
 		03C1D4771B410F0800EBFD71 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				03B6EDC41B591EAE00F35903 /* Left 4-50.png */,
+				03B6EDC51B591EAE00F35903 /* Right 4-50.png */,
 				03E6558C1B5398DB00DB33E8 /* Clock-50.png */,
 				03E6558D1B5398DB00DB33E8 /* Info-50.png */,
 				03E6558E1B5398DB00DB33E8 /* News Filled-50.png */,
@@ -1502,6 +1508,7 @@
 				0317120B1B4C2BD500D453F9 /* Location Filled-50.png in Resources */,
 				03C1D4621B3FFAC300EBFD71 /* LeadViewController.xib in Resources */,
 				03C1D4661B4005F300EBFD71 /* blue_hex.png in Resources */,
+				03B6EDC71B591EAE00F35903 /* Right 4-50.png in Resources */,
 				0317124D1B4F9DC300D453F9 /* CustomerProfileView.xib in Resources */,
 				03C1D4421B3E762000EBFD71 /* avatar.png in Resources */,
 				0369A2CD1B4A406100954B94 /* LeadCreateStep3ViewController.xib in Resources */,
@@ -1540,6 +1547,7 @@
 				03C1D4741B410F0300EBFD71 /* Plus Math-100.png in Resources */,
 				03C1D49E1B41285B00EBFD71 /* 10.jpg in Resources */,
 				03D83C771B5655B700792474 /* BaseViewController.xib in Resources */,
+				03B6EDC61B591EAE00F35903 /* Left 4-50.png in Resources */,
 				03335D491B3A9713004CB4FB /* Images.xcassets in Resources */,
 				03C1D40A1B3DC05F00EBFD71 /* Leads.json in Resources */,
 				03412F0C1B43CE7F00459FBF /* MenuTableViewCell.xib in Resources */,

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -198,6 +198,49 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iic-WS-BQf">
+                            <rect key="frame" x="250" y="20" width="100" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="MRy-xy-ddG"/>
+                                <constraint firstAttribute="height" constant="25" id="tll-Zl-P9P"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gDI-ue-GiP">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfg-xT-HPe">
+                            <rect key="frame" x="205" y="20" width="25" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="C3I-io-5Ji"/>
+                                <constraint firstAttribute="width" constant="25" id="zR2-lp-gKg"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" image="Left 4-50.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="leftAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="wUn-MU-DBE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwB-px-2kn">
+                            <rect key="frame" x="370" y="20" width="25" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="wjh-6x-Zhe"/>
+                                <constraint firstAttribute="width" constant="25" id="yZ1-Ai-CSr"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" image="Right 4-50.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rightAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="TlJ-FD-Yvk"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -208,23 +251,29 @@
                         <constraint firstItem="2lf-1b-wIX" firstAttribute="top" secondItem="oSV-cS-a4j" secondAttribute="bottom" id="3y7-XA-YjY"/>
                         <constraint firstAttribute="centerX" secondItem="4vs-0t-bvb" secondAttribute="centerX" id="3zg-HS-zgb"/>
                         <constraint firstItem="4vs-0t-bvb" firstAttribute="width" secondItem="wvX-64-Ebz" secondAttribute="width" id="48B-dX-K05"/>
+                        <constraint firstItem="kwB-px-2kn" firstAttribute="trailing" secondItem="iic-WS-BQf" secondAttribute="trailing" constant="45" id="627-St-r6g"/>
                         <constraint firstAttribute="centerX" secondItem="2lf-1b-wIX" secondAttribute="centerX" id="7R8-P2-1Si"/>
+                        <constraint firstAttribute="centerX" secondItem="iic-WS-BQf" secondAttribute="centerX" id="7s8-sd-vHw"/>
                         <constraint firstItem="ePW-qW-onp" firstAttribute="width" secondItem="5oH-LP-OXK" secondAttribute="width" id="9kF-s7-WUJ"/>
                         <constraint firstItem="oSV-cS-a4j" firstAttribute="centerY" secondItem="JIk-Ug-n2p" secondAttribute="centerY" constant="-14.5" id="C4T-NZ-ZAn"/>
                         <constraint firstItem="2lf-1b-wIX" firstAttribute="width" secondItem="JIk-Ug-n2p" secondAttribute="width" id="CTl-J4-xT3"/>
                         <constraint firstItem="Dhx-66-kXt" firstAttribute="height" secondItem="8Qd-14-Gfy" secondAttribute="height" id="EMC-Vr-gBx"/>
                         <constraint firstItem="JIk-Ug-n2p" firstAttribute="top" secondItem="wvX-64-Ebz" secondAttribute="bottom" constant="-24" id="Mpr-7W-eJg"/>
                         <constraint firstItem="oSV-cS-a4j" firstAttribute="top" secondItem="wvX-64-Ebz" secondAttribute="bottom" constant="66" id="OUS-me-rx8"/>
+                        <constraint firstItem="iic-WS-BQf" firstAttribute="leading" secondItem="qfg-xT-HPe" secondAttribute="leading" constant="45" id="QhS-H7-aiX"/>
                         <constraint firstItem="wvX-64-Ebz" firstAttribute="top" secondItem="1hB-0T-mim" secondAttribute="top" constant="80" id="R7k-Wo-W9p"/>
                         <constraint firstItem="oSV-cS-a4j" firstAttribute="top" secondItem="JIk-Ug-n2p" secondAttribute="top" constant="38" id="SNx-g5-sAm"/>
                         <constraint firstAttribute="centerX" secondItem="JIk-Ug-n2p" secondAttribute="centerX" id="U0m-kp-hJL"/>
                         <constraint firstItem="oSV-cS-a4j" firstAttribute="height" secondItem="8Qd-14-Gfy" secondAttribute="height" id="YhK-y2-XGl"/>
                         <constraint firstItem="XV7-5q-OwP" firstAttribute="height" secondItem="8Qd-14-Gfy" secondAttribute="height" id="aSb-Kj-hM6"/>
                         <constraint firstItem="YQ1-00-asW" firstAttribute="height" secondItem="5oH-LP-OXK" secondAttribute="height" id="e1w-Hf-3gp"/>
+                        <constraint firstItem="iic-WS-BQf" firstAttribute="top" secondItem="1hB-0T-mim" secondAttribute="top" constant="20" id="g3x-sB-uPD"/>
                         <constraint firstAttribute="centerX" secondItem="wvX-64-Ebz" secondAttribute="centerX" id="l0m-Cv-neO"/>
                         <constraint firstItem="YQ1-00-asW" firstAttribute="width" secondItem="5oH-LP-OXK" secondAttribute="width" id="lzl-ag-TaO"/>
                         <constraint firstItem="JIk-Ug-n2p" firstAttribute="width" secondItem="5oH-LP-OXK" secondAttribute="width" id="mun-og-8zK"/>
                         <constraint firstItem="4vs-0t-bvb" firstAttribute="top" secondItem="JIk-Ug-n2p" secondAttribute="bottom" constant="-24" id="niK-3h-WIl"/>
+                        <constraint firstItem="kwB-px-2kn" firstAttribute="centerY" secondItem="iic-WS-BQf" secondAttribute="centerY" id="t6e-yo-5Pe"/>
+                        <constraint firstItem="iic-WS-BQf" firstAttribute="centerY" secondItem="qfg-xT-HPe" secondAttribute="centerY" id="ui3-eQ-a2h"/>
                         <constraint firstItem="JIk-Ug-n2p" firstAttribute="height" secondItem="5oH-LP-OXK" secondAttribute="height" id="uxF-r0-z2k"/>
                         <constraint firstAttribute="centerX" secondItem="oSV-cS-a4j" secondAttribute="centerX" id="vwp-kY-9pt"/>
                     </constraints>
@@ -259,6 +308,7 @@
                 <outlet property="pitched" destination="8Qd-14-Gfy" id="hNT-Y5-WpI"/>
                 <outlet property="pitchedButton" destination="5oH-LP-OXK" id="PeN-8m-ySk"/>
                 <outlet property="pitchedLabel" destination="R8u-81-0li" id="esm-0g-pBY"/>
+                <outlet property="quarterCollectionView" destination="iic-WS-BQf" id="XnX-7h-2Kr"/>
                 <outlet property="queued" destination="Dhx-66-kXt" id="7nJ-AF-35I"/>
                 <outlet property="queuedButton" destination="YQ1-00-asW" id="ahO-9T-yX8"/>
                 <outlet property="queuedLabel" destination="xVF-C5-BtL" id="Ha1-2v-lP8"/>
@@ -272,6 +322,8 @@
         </view>
     </objects>
     <resources>
+        <image name="Left 4-50.png" width="50" height="50"/>
+        <image name="Right 4-50.png" width="50" height="50"/>
         <image name="blue_hex.png" width="261" height="302"/>
         <image name="brown_hex.png" width="179" height="205"/>
         <image name="red_hex.png" width="178" height="205"/>

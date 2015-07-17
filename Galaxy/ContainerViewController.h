@@ -27,7 +27,6 @@
 
 @property (strong, nonatomic) id dataObject;
 
--(void)addViewToWrapperView:(UIView *)view;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil dataObject:(id) dataObject;
 
 @end

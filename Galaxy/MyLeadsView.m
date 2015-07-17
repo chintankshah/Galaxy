@@ -148,16 +148,17 @@
     [self.myLeads setText: myLeadSummaryModel.myLeads];
     [self.queued setText:myLeadSummaryModel.queued];
     
-    
-    
-    
+    self.quarterCollectionView.delegate = self.delegate;
+    self.quarterCollectionView.dataSource = self.delegate;
 
+}
 
+- (IBAction)leftAction:(id)sender {
+    [self.delegate showPrevious];
+}
 
-    
-        
-    
-    
+- (IBAction)rightAction:(id)sender {
+    [self.delegate showNext];
 }
 
 -(NSMutableAttributedString*) getAttributedText: (NSString*) string{

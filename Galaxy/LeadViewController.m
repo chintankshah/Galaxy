@@ -26,6 +26,8 @@
 
 @implementation LeadViewController
 
+@synthesize selectedSegment;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
    
@@ -34,6 +36,8 @@
     [self getMyLeadSummary];
     [self getTeamLeadSummary];
     [self setupSegmentedControl];
+    
+    selectedSegment = 0;
     [self loadMyLeadsView];
     
     
@@ -195,7 +199,7 @@
 }
 
 - (IBAction)leadsSegmentedControlAction:(UISegmentedControl *)sender {
-    NSInteger selectedSegment = sender.selectedSegmentIndex;
+    selectedSegment = (int) sender.selectedSegmentIndex;
     
     switch (selectedSegment) {
         case 0:
@@ -215,44 +219,169 @@
 
 -(void)loadMyLeadsView{
     
-    NSArray *bundleObjects;
-    MyLeadsView *leadView;
-    bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"MyLeadsView" owner:self options:nil];
-    for (id object in bundleObjects) {
-        if ([object isKindOfClass:[MyLeadsView class]]){
-            leadView = (MyLeadsView *)object;
-            break;
+    if (self.leadView == nil) {
+        NSArray *bundleObjects;
+        
+        bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"MyLeadsView" owner:self options:nil];
+        for (id object in bundleObjects) {
+            if ([object isKindOfClass:[MyLeadsView class]]){
+                self.leadView = (MyLeadsView *)object;
+                break;
+            }
         }
+        
+        [self.leadView.quarterCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"QuarterViewCell"];
+        
+        self.leadView.delegate = self;
+        [self.leadView initWithLeadSummaryModel:self.myLeadSummaryModel];
+    
     }
     
-    leadView.delegate = self;
-    [leadView initWithLeadSummaryModel:self.myLeadSummaryModel];
-    
-    [self addViewToContentView:leadView];
-    
+    [self addViewToContentView:self.leadView];
+
 }
 
 -(void)loadTeamView{
     
-    NSArray *bundleObjects;
-    TeamLeadsView *teamView;
-    bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"TeamLeadsView" owner:self options:nil];
-    for (id object in bundleObjects) {
-        if ([object isKindOfClass:[TeamLeadsView class]]){
-            teamView = (TeamLeadsView *)object;
-            break;
+    if (self.teamView == nil) {
+        
+        NSArray *bundleObjects;
+        
+        bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"TeamLeadsView" owner:self options:nil];
+        for (id object in bundleObjects) {
+            if ([object isKindOfClass:[TeamLeadsView class]]){
+                self.teamView = (TeamLeadsView *)object;
+                break;
+            }
         }
+        
+        [self.teamView initPlotWithTeamLeadSummary:self.teamLeadSummaryModel];
+        [self.teamView setDataSourceDelegate:self];
+        
     }
     
-    [teamView initPlotWithTeamLeadSummary:self.teamLeadSummaryModel];
-    [teamView setDataSourceDelegate:self];
+    [self addViewToContentView:self.teamView];
     
-    [self addViewToContentView:teamView];
 }
 
 -(void)loadCompanyView{
-    //TODO to be change
     [self loadTeamView];
+}
+
+#pragma CollectionViewDelegate
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 4;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"QuarterViewCell" forIndexPath:indexPath];
+    
+    NSArray *viewsToRemove = [cell subviews];
+    for (UIView *v in viewsToRemove) {
+        [v removeFromSuperview];
+    }
+    
+    NSString *quarterString = [NSString stringWithFormat:@"QUARTER %ld", (long)indexPath.row+1];
+    
+    CGRect rect = CGRectMake(0, 0, 100, 30);
+    UILabel *label = [[UILabel alloc]initWithFrame:rect];
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:quarterString];
+    
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:220.0/255.0 green:189.0/255.0 blue:36.0/255.0 alpha:1] range:NSMakeRange(0, quarterString.length)];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:18] range:NSMakeRange(0, quarterString.length)];
+    
+    [label setAttributedText:attributedString];
+    
+    [cell addSubview:label];
+    
+    return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CGSize cellsize = CGSizeMake(100, 30);
+    return cellsize;
+    
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [self scrollToVisivbleCell];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView
+                  willDecelerate:(BOOL)decelerate{
+    
+    if (!decelerate) {
+        [self scrollToVisivbleCell];
+    }
+    
+}
+
+-(NSIndexPath*)getVisibleIndexForCollectionView: (UICollectionView*) collectionView{
+    
+    CGRect visibleRect = (CGRect){.origin = collectionView.contentOffset, .size = collectionView.bounds.size};
+    
+    CGPoint visiblePoint = CGPointMake(CGRectGetMidX(visibleRect), CGRectGetMidY(visibleRect));
+    NSIndexPath *visibleIndexPath = [collectionView indexPathForItemAtPoint:visiblePoint];
+    
+    return visibleIndexPath;
+}
+
+-(UICollectionView*) getVisibleCollectionView{
+    switch (self.selectedSegment) {
+        case 0:
+            return self.leadView.quarterCollectionView;
+        default:
+            return self.leadView.quarterCollectionView;
+    }
+}
+
+-(void)scrollToVisivbleCell{
+    
+    UICollectionView *collectionView = [self getVisibleCollectionView];
+    NSIndexPath *visibleIndexPath =  [self getVisibleIndexForCollectionView:collectionView];
+    
+    [collectionView scrollToItemAtIndexPath:visibleIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    
+}
+
+-(void)showNext{
+    
+    UICollectionView *collectionView = [self getVisibleCollectionView];
+    NSIndexPath *visibleIndexPath =  [self getVisibleIndexForCollectionView:collectionView];
+    
+    if (visibleIndexPath.row < 3) {
+        
+        NSInteger newLast = [visibleIndexPath indexAtPosition:visibleIndexPath.length-1]+1;
+        visibleIndexPath = [[visibleIndexPath indexPathByRemovingLastIndex] indexPathByAddingIndex:newLast];
+        
+        [collectionView scrollToItemAtIndexPath:visibleIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    }
+
+}
+
+-(void)showPrevious{
+    
+    UICollectionView *collectionView = [self getVisibleCollectionView];
+    NSIndexPath *visibleIndexPath =  [self getVisibleIndexForCollectionView:collectionView];
+    
+    if (visibleIndexPath.row > 0) {
+        
+        NSInteger newLast = [visibleIndexPath indexAtPosition:visibleIndexPath.length-1]-1;
+        visibleIndexPath = [[visibleIndexPath indexPathByRemovingLastIndex] indexPathByAddingIndex:newLast];
+        
+        [collectionView scrollToItemAtIndexPath:visibleIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    }
+    
 }
 
 -(void)addViewToContentView: (UIView*)view{

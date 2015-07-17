@@ -14,8 +14,10 @@
 #import "MyLeadSummaryModel.h"
 #import "CustomSegmentedControl.h"
 #import "BaseViewController.h"
+#import "TeamLeadsView.h"
 
-@interface LeadViewController : BaseViewController<UIGestureRecognizerDelegate, MyLeadsViewDelegate, CPTPlotDataSource, UIActionSheetDelegate, CPTPieChartDelegate>
+
+@interface LeadViewController : BaseViewController<UIGestureRecognizerDelegate, MyLeadsViewDelegate, CPTPlotDataSource, UIActionSheetDelegate, CPTPieChartDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, QuarterScrollDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *userName;
 @property (strong, nonatomic) IBOutlet CustomSegmentedControl *leadsSegmentedControl;
@@ -24,6 +26,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *filtersLeadingSpaceContraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *titleLabelHeightConstraint;
+
+@property (strong, nonatomic) TeamLeadsView *teamView;
+@property (strong, nonatomic) MyLeadsView *leadView;
+@property (assign, nonatomic) int selectedSegment;
 
 @property (strong, nonatomic) TeamLeadSummaryModel *teamLeadSummaryModel;
 @property (strong, nonatomic) MyLeadSummaryModel *myLeadSummaryModel;

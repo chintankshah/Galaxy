@@ -30,7 +30,7 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
     
     self.child.view.bounds = self.wrapperView.bounds;
-    [self addViewToWrapperView:self.child.view];
+    [self addView:self.child.view ToParentView:self.wrapperView];
     
     [self addCalendarView];
     
@@ -44,8 +44,8 @@
 
 -(void)addCalendarView{
     
-    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-    self.sideViewWidthConstraint.constant = screenHeight-RIGHT_GESTURE_LIMIT;
+    CGRect bounds = [UIScreen mainScreen].bounds;
+    self.sideViewWidthConstraint.constant = bounds.size.width-RIGHT_GESTURE_LIMIT;
     
     NSArray *bundleObjects;
     bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"CalendarView" owner:self options:nil];
@@ -57,12 +57,16 @@
         }
     }
     
-    CGRect bounds = [UIScreen mainScreen].bounds;
+    
+    NSLog(@"screenWidth: %f", bounds.size.width);
     bounds.size.width -= RIGHT_GESTURE_LIMIT;
+    
+    NSLog(@"calendarView width: %f height: %f", bounds.size.width, bounds.size.height);
     
     calendarView.frame = bounds;
     
-    [self.sideView addSubview:calendarView];
+    [self addView:calendarView ToParentView:self.sideView];
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -199,43 +203,42 @@
     
 }
 
-
--(void)addViewToWrapperView:(UIView *)view{
+-(void)addView:(UIView *)view ToParentView:(UIView *) parentView{
     
-    [self.wrapperView addSubview:view];
+    [parentView addSubview:view];
     
     [view setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.wrapperView addConstraint:[NSLayoutConstraint constraintWithItem:view
-                                                                   attribute:NSLayoutAttributeTop
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.wrapperView
-                                                                   attribute:NSLayoutAttributeTop
-                                                                  multiplier:1.0
-                                                                    constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                                 attribute:NSLayoutAttributeTop
+                                                                 relatedBy:NSLayoutRelationEqual
+                                                                    toItem:parentView
+                                                                 attribute:NSLayoutAttributeTop
+                                                                multiplier:1.0
+                                                                  constant:0.0]];
     
-    [self.wrapperView addConstraint:[NSLayoutConstraint constraintWithItem:view
-                                                                   attribute:NSLayoutAttributeRight
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.wrapperView
-                                                                   attribute:NSLayoutAttributeRight
-                                                                  multiplier:1.0
-                                                                    constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                                 attribute:NSLayoutAttributeRight
+                                                                 relatedBy:NSLayoutRelationEqual
+                                                                    toItem:parentView
+                                                                 attribute:NSLayoutAttributeRight
+                                                                multiplier:1.0
+                                                                  constant:0.0]];
     
-    [self.wrapperView addConstraint:[NSLayoutConstraint constraintWithItem:view
-                                                                   attribute:NSLayoutAttributeBottom
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.wrapperView
-                                                                   attribute:NSLayoutAttributeBottom
-                                                                  multiplier:1.0
-                                                                    constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                                 attribute:NSLayoutAttributeBottom
+                                                                 relatedBy:NSLayoutRelationEqual
+                                                                    toItem:parentView
+                                                                 attribute:NSLayoutAttributeBottom
+                                                                multiplier:1.0
+                                                                  constant:0.0]];
     
-    [self.wrapperView addConstraint:[NSLayoutConstraint constraintWithItem:view
-                                                                   attribute:NSLayoutAttributeLeft
-                                                                   relatedBy:NSLayoutRelationEqual
-                                                                      toItem:self.wrapperView
-                                                                   attribute:NSLayoutAttributeLeft
-                                                                  multiplier:1.0
-                                                                    constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                                 attribute:NSLayoutAttributeLeft
+                                                                 relatedBy:NSLayoutRelationEqual
+                                                                    toItem:parentView
+                                                                 attribute:NSLayoutAttributeLeft
+                                                                multiplier:1.0
+                                                                  constant:0.0]];
     
 }
 
