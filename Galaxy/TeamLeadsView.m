@@ -124,7 +124,6 @@
     self.pieChart = [[CPTPieChart alloc] init];
     
 //    self.pieChart.pieRadius = (self.hostView.bounds.size.width * 0.6) / 2;
-    NSLog(@"pieRadius: %d", self.pieRadius);
     self.pieChart.pieRadius = self.pieRadius;
     self.pieChart.identifier = graph.title;
     self.pieChart.startAngle = M_PI_4;
