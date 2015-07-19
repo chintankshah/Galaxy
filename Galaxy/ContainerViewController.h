@@ -13,19 +13,14 @@
 @interface ContainerViewController : UIViewController<UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *wrapperView;
-@property (strong, nonatomic) IBOutlet UIView *sideView;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *sideViewWidthConstraint;
-
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewLeadingConstraint;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewTrailingConstraint;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuTrailingConstraint;
-
-@property (strong, nonatomic) UIPanGestureRecognizer *globalPanGesture;
+@property (strong, nonatomic) IBOutlet UIButton *backButton;
 
 @property (strong, nonatomic) BaseViewController *child;
 @property (strong, nonatomic) UIView *childView;
 
 @property (strong, nonatomic) id dataObject;
+
+- (IBAction)goBack:(id)sender;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil dataObject:(id) dataObject;
 

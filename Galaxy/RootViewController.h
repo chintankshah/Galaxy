@@ -17,11 +17,16 @@
 @property (strong, nonatomic) IBOutlet UITableView *menu;
 @property (strong, nonatomic) IBOutlet UIView *menuOverlay;
 
+@property (strong, nonatomic) IBOutlet UIView *sideView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *sideViewWidthConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewLeadingConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *contentViewTrailingConstraint;
+
+@property (strong, nonatomic) UIPanGestureRecognizer *globalPanGesture;
 
 @property (strong, nonatomic) ContainerViewController *containerViewController;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuTrailingConstraint;
-
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuHeightConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuWidthConstraint;
 

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerViewController">
             <connections>
-                <outlet property="contentViewLeadingConstraint" destination="LKh-tk-2ai" id="Po4-dF-Lk7"/>
-                <outlet property="contentViewTrailingConstraint" destination="TUH-an-fQl" id="7AE-Ey-Pt0"/>
-                <outlet property="sideView" destination="C6i-TS-Y1A" id="kAZ-2y-rfv"/>
-                <outlet property="sideViewWidthConstraint" destination="6a6-Bj-3JL" id="aNZ-bC-YGM"/>
+                <outlet property="backButton" destination="cdB-KZ-AhJ" id="VDf-t2-jWP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="wrapperView" destination="XVr-cF-n8V" id="dLq-hZ-0LJ"/>
             </connections>
@@ -24,24 +21,35 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6i-TS-Y1A">
-                    <rect key="frame" x="600" y="0.0" width="600" height="600"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdB-KZ-AhJ">
+                    <rect key="frame" x="535" y="535" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.62745098040000002" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="600" id="6a6-Bj-3JL"/>
+                        <constraint firstAttribute="width" constant="50" id="qXl-hW-i2W"/>
+                        <constraint firstAttribute="height" constant="50" id="wGf-Mb-673"/>
                     </constraints>
-                </view>
+                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Left 4-50.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="rh2-Wm-lQe"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="C6i-TS-Y1A" secondAttribute="bottom" id="3v7-in-ayj"/>
+                <constraint firstAttribute="bottom" secondItem="cdB-KZ-AhJ" secondAttribute="bottom" constant="15" id="BgB-4Q-i9B"/>
                 <constraint firstItem="XVr-cF-n8V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LKh-tk-2ai"/>
                 <constraint firstAttribute="trailing" secondItem="XVr-cF-n8V" secondAttribute="trailing" id="TUH-an-fQl"/>
-                <constraint firstItem="C6i-TS-Y1A" firstAttribute="leading" secondItem="XVr-cF-n8V" secondAttribute="trailing" id="dVJ-KI-gny"/>
                 <constraint firstItem="XVr-cF-n8V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jqU-hq-X6M"/>
                 <constraint firstAttribute="bottom" secondItem="XVr-cF-n8V" secondAttribute="bottom" id="oQv-xf-BM4"/>
-                <constraint firstItem="C6i-TS-Y1A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xsG-MJ-Mfg"/>
+                <constraint firstAttribute="trailing" secondItem="cdB-KZ-AhJ" secondAttribute="trailing" constant="15" id="qiH-FN-0H1"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Left 4-50.png" width="50" height="50"/>
+    </resources>
 </document>

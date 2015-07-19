@@ -7,21 +7,13 @@
 //
 
 #import "ContainerViewController.h"
-
-#define RIGHT_GESTURE_LIMIT 50
-#define MENU_HEIGHT 50
-#define MENU_HEIGHT_IPHONE4_AND_BELOW 40
+#import "AppDelegate.h"
 
 @interface ContainerViewController ()
 
 @end
 
-
 @implementation ContainerViewController
-
-@synthesize globalPanGesture;
-@synthesize contentViewLeadingConstraint;
-@synthesize contentViewTrailingConstraint;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,43 +21,10 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
     
+    self.backButton.layer.cornerRadius = self.backButton.bounds.size.width/2.0;
+
     self.child.view.bounds = self.wrapperView.bounds;
     [self addView:self.child.view ToParentView:self.wrapperView];
-    
-    [self addCalendarView];
-    
-    globalPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGlobalPanGesture:)];
-    [self.wrapperView addGestureRecognizer:globalPanGesture];
-    
-    if (self.navigationController!=nil)
-        [globalPanGesture requireGestureRecognizerToFail:self.navigationController.interactivePopGestureRecognizer];
-    
-}
-
--(void)addCalendarView{
-    
-    CGRect bounds = [UIScreen mainScreen].bounds;
-    self.sideViewWidthConstraint.constant = bounds.size.width-RIGHT_GESTURE_LIMIT;
-    
-    NSArray *bundleObjects;
-    bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"CalendarView" owner:self options:nil];
-    CalendarView *calendarView;
-    for (id object in bundleObjects) {
-        if ([object isKindOfClass:[CalendarView class]]){
-            calendarView = (CalendarView *)object;
-            break;
-        }
-    }
-    
-    
-    NSLog(@"screenWidth: %f", bounds.size.width);
-    bounds.size.width -= RIGHT_GESTURE_LIMIT;
-    
-    NSLog(@"calendarView width: %f height: %f", bounds.size.width, bounds.size.height);
-    
-    calendarView.frame = bounds;
-    
-    [self addView:calendarView ToParentView:self.sideView];
     
 }
 
@@ -84,123 +43,17 @@
     return self;
 }
 
+- (IBAction)goBack:(id)sender {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.navigationController popViewControllerAnimated:YES];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil dataObject:(id) dataObject
 {
     if (dataObject != nil)
         self.dataObject = dataObject;
     
     return [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-}
-
-
--(void)handleGlobalPanGesture:(UIPanGestureRecognizer*)gestureRecognizer{
-    
-    CGPoint screenLocation = [gestureRecognizer locationInView:self.view];
-    CGPoint location = [gestureRecognizer locationInView:gestureRecognizer.view];
-    CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
-    CGPoint velocity = [gestureRecognizer velocityInView:gestureRecognizer.view];
-    
-//        NSLog(@"screenLocation.x : %f", screenLocation.x);
-    //    NSLog(@"location.x : %f", location.x);
-    //    NSLog(@"translation.x : %f", translation.x);
-    
-    if(velocity.x > 1500){
-        //close right menu
-        
-        self.contentViewTrailingConstraint.constant = 0;
-        self.menuTrailingConstraint.constant = 20;
-        self.contentViewLeadingConstraint.constant = 0;
-        
-    }
-    
-    if(velocity.x < -1500){
-        //open right menu
-        
-        self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
-        self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT + 20;
-        self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width;
-    }
-    
-    
-    if(gestureRecognizer.state == UIGestureRecognizerStateChanged && (location.x >= (self.view.bounds.size.width - RIGHT_GESTURE_LIMIT))){
-        
-        //transition effect for opening right menu
-        if(translation.x < 0
-           && self.view.bounds.size.width+translation.x > RIGHT_GESTURE_LIMIT
-           && self.contentViewTrailingConstraint.constant != self.view.bounds.size.width-RIGHT_GESTURE_LIMIT){
-            
-            if(screenLocation.x < RIGHT_GESTURE_LIMIT
-               && -translation.x < RIGHT_GESTURE_LIMIT){
-                
-                //do nothing
-                
-            }else{
-                
-                self.contentViewTrailingConstraint.constant = -translation.x;
-                self.menuTrailingConstraint.constant = -translation.x + 20;
-                self.contentViewLeadingConstraint.constant = translation.x;
-                
-            }
-            
-        }
-        
-        
-        //transition effect for closing right menu
-        if(translation.x > 0
-           && self.view.bounds.size.width-translation.x > RIGHT_GESTURE_LIMIT
-           && self.contentViewTrailingConstraint.constant > 0){
-            
-            if (screenLocation.x > self.view.bounds.size.width-RIGHT_GESTURE_LIMIT
-                && self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x > RIGHT_GESTURE_LIMIT) {
-                
-                //do nothing
-                
-            }else{
-                
-                self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x;
-                self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x + 20;
-                self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width+translation.x;
-                
-            }
-            
-        }
-    }
-    
-    
-    if (gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateFailed) {
-        
-        //open right menu completely
-        if(self.contentViewTrailingConstraint.constant > (self.view.bounds.size.width)/2
-           && self.contentViewTrailingConstraint.constant != self.view.bounds.size.width-RIGHT_GESTURE_LIMIT){
-            
-            [UIView animateWithDuration:0.2 animations:^{
-                
-                self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
-                self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT + 20;
-                self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width;
-                
-                [self.view layoutIfNeeded];
-                
-            }];
-            
-            
-        }else if(self.contentViewTrailingConstraint.constant <= (self.view.bounds.size.width)/2
-                 && self.contentViewTrailingConstraint.constant != 0){
-            //close right menu completely
-            
-            [UIView animateWithDuration:0.2 animations:^{
-                
-                self.contentViewTrailingConstraint.constant = 0;
-                self.menuTrailingConstraint.constant = 20;
-                self.contentViewLeadingConstraint.constant = 0;
-                
-                [self.view layoutIfNeeded];
-                
-            }];
-        }
-        
-    }
-    
 }
 
 -(void)addView:(UIView *)view ToParentView:(UIView *) parentView{

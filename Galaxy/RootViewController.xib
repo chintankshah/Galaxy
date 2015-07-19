@@ -8,12 +8,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
                 <outlet property="contentView" destination="fK5-Sr-aYn" id="5Mh-X7-mpr"/>
+                <outlet property="contentViewLeadingConstraint" destination="QwO-DO-Bmx" id="2kV-Og-rNn"/>
+                <outlet property="contentViewTrailingConstraint" destination="hUP-o6-cY9" id="SR4-jm-zSz"/>
                 <outlet property="menu" destination="6Ki-1b-RTU" id="bJC-im-jqk"/>
                 <outlet property="menuButton" destination="bKr-N0-fVf" id="p3z-jm-jev"/>
                 <outlet property="menuHeightConstraint" destination="4oJ-HR-MVF" id="s9G-tN-C02"/>
                 <outlet property="menuOverlay" destination="1Bv-BP-OeL" id="owQ-Br-V35"/>
                 <outlet property="menuTrailingConstraint" destination="3D3-lU-WRD" id="FZB-Az-teI"/>
                 <outlet property="menuWidthConstraint" destination="Bcb-JC-mig" id="ZGM-cB-9Tb"/>
+                <outlet property="sideView" destination="vrz-DO-t0j" id="6Q4-Vm-YyL"/>
+                <outlet property="sideViewWidthConstraint" destination="iPL-9l-9x7" id="A78-tM-1DI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,6 +29,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-Sr-aYn">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrz-DO-t0j">
+                    <rect key="frame" x="600" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="600" id="iPL-9l-9x7"/>
+                    </constraints>
                 </view>
                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-BP-OeL">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -69,10 +80,13 @@
                 <constraint firstItem="6Ki-1b-RTU" firstAttribute="trailing" secondItem="bKr-N0-fVf" secondAttribute="trailing" id="RYP-wd-FAQ"/>
                 <constraint firstItem="fK5-Sr-aYn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YFJ-9T-Vvw"/>
                 <constraint firstAttribute="bottom" secondItem="fK5-Sr-aYn" secondAttribute="bottom" id="cYv-CU-Uly"/>
+                <constraint firstItem="vrz-DO-t0j" firstAttribute="leading" secondItem="fK5-Sr-aYn" secondAttribute="trailing" id="eAd-HY-XEj"/>
+                <constraint firstItem="vrz-DO-t0j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fHH-Oe-m50"/>
                 <constraint firstAttribute="trailing" secondItem="fK5-Sr-aYn" secondAttribute="trailing" id="hUP-o6-cY9"/>
                 <constraint firstAttribute="bottom" secondItem="6Ki-1b-RTU" secondAttribute="bottom" constant="90" id="lSC-N5-ooe"/>
                 <constraint firstItem="1Bv-BP-OeL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u48-9r-VKb"/>
                 <constraint firstAttribute="bottom" secondItem="bKr-N0-fVf" secondAttribute="bottom" constant="15" id="uLA-6J-BGG"/>
+                <constraint firstAttribute="bottom" secondItem="vrz-DO-t0j" secondAttribute="bottom" id="w58-9N-8xR"/>
             </constraints>
             <point key="canvasLocation" x="146" y="122"/>
         </view>

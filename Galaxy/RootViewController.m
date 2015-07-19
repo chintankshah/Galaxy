@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "DashboardViewController.h"
 #import "MenuTableViewCell.h"
-
+#import "CalendarView.h"
 
 @interface RootViewController ()
 
@@ -22,16 +22,162 @@
 #define MENU_HEIGHT_IPHONE4_AND_BELOW 40
 
 bool menuOpened = NO;
-@synthesize menuTrailingConstraint;
+
+@synthesize globalPanGesture;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupMenu];
+    [self addCalendarView];
+    
+    globalPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGlobalPanGesture:)];
+    [self.contentView addGestureRecognizer:globalPanGesture];
     
 //    [self loadContentViewWith:@"DashboardViewController"];
 //    [self loadContentViewWith:@"CustomersViewController"];
     [self loadContentViewWith:@"LeadViewController"];
+    
+}
+
+-(void)addCalendarView{
+    
+    CGRect bounds = [UIScreen mainScreen].bounds;
+    self.sideViewWidthConstraint.constant = bounds.size.width-RIGHT_GESTURE_LIMIT;
+    
+    NSArray *bundleObjects;
+    bundleObjects = [[NSBundle mainBundle] loadNibNamed:@"CalendarView" owner:self options:nil];
+    CalendarView *calendarView;
+    for (id object in bundleObjects) {
+        if ([object isKindOfClass:[CalendarView class]]){
+            calendarView = (CalendarView *)object;
+            break;
+        }
+    }
+    
+    bounds.size.width -= RIGHT_GESTURE_LIMIT;
+    
+    calendarView.frame = bounds;
+    [self addView:calendarView ToParentView:self.sideView];
+    
+}
+
+
+-(void)handleGlobalPanGesture:(UIPanGestureRecognizer*)gestureRecognizer{
+    
+    if(menuOpened){
+        [self toggleMenu:self];
+    }
+    
+    CGPoint screenLocation = [gestureRecognizer locationInView:self.view];
+    CGPoint location = [gestureRecognizer locationInView:gestureRecognizer.view];
+    CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
+    CGPoint velocity = [gestureRecognizer velocityInView:gestureRecognizer.view];
+    
+    //    NSLog(@"screenLocation.x : %f", screenLocation.x);
+    //    NSLog(@"location.x : %f", location.x);
+    //    NSLog(@"translation.x : %f", translation.x);
+    
+    if(velocity.x > 1500){
+        //close right menu
+        
+        self.contentViewTrailingConstraint.constant = 0;
+        self.menuTrailingConstraint.constant = 20;
+        self.contentViewLeadingConstraint.constant = 0;
+        
+    }
+    
+    if(velocity.x < -1500){
+        //open right menu
+        
+        self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
+        self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT + 20;
+        self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width;
+    }
+    
+    
+    if(gestureRecognizer.state == UIGestureRecognizerStateChanged && (location.x >= (self.view.bounds.size.width - RIGHT_GESTURE_LIMIT))){
+        
+        //transition effect for opening right menu
+        if(translation.x < 0
+           && self.view.bounds.size.width+translation.x > RIGHT_GESTURE_LIMIT
+           && self.contentViewTrailingConstraint.constant != self.view.bounds.size.width-RIGHT_GESTURE_LIMIT){
+            
+            if(screenLocation.x < RIGHT_GESTURE_LIMIT
+               && -translation.x < RIGHT_GESTURE_LIMIT){
+                
+                //do nothing
+                
+            }else{
+                
+                self.contentViewTrailingConstraint.constant = -translation.x;
+                self.menuTrailingConstraint.constant = -translation.x + 20;
+                self.contentViewLeadingConstraint.constant = translation.x;
+                
+            }
+            
+            
+        }
+        
+        
+        //transition effect for closing right menu
+        if(translation.x > 0
+           && self.view.bounds.size.width-translation.x > RIGHT_GESTURE_LIMIT
+           && self.contentViewTrailingConstraint.constant > 0){
+            
+            if (screenLocation.x > self.view.bounds.size.width-RIGHT_GESTURE_LIMIT
+                && self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x > RIGHT_GESTURE_LIMIT) {
+                
+                //do nothing
+                
+            }else{
+                
+                
+                self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x;
+                self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT-translation.x + 20;
+                self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width+translation.x;
+                
+            }
+            
+            
+            
+        }
+    }
+    
+    
+    if (gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateFailed) {
+        
+        //open right menu completely
+        if(self.contentViewTrailingConstraint.constant > (self.view.bounds.size.width)/2
+           && self.contentViewTrailingConstraint.constant != self.view.bounds.size.width-RIGHT_GESTURE_LIMIT){
+            
+            [UIView animateWithDuration:0.2 animations:^{
+                
+                self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
+                self.menuTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT + 20;
+                self.contentViewLeadingConstraint.constant = RIGHT_GESTURE_LIMIT-self.view.bounds.size.width;
+                
+                [self.view layoutIfNeeded];
+                
+            }];
+            
+            
+        }else if(self.contentViewTrailingConstraint.constant <= (self.view.bounds.size.width)/2
+                 && self.contentViewTrailingConstraint.constant != 0){
+            //close right menu completely
+            
+            [UIView animateWithDuration:0.2 animations:^{
+                
+                self.contentViewTrailingConstraint.constant = 0;
+                self.menuTrailingConstraint.constant = 20;
+                self.contentViewLeadingConstraint.constant = 0;
+                
+                [self.view layoutIfNeeded];
+                
+            }];
+        }
+        
+    }
     
 }
 
@@ -260,5 +406,45 @@ bool menuOpened = NO;
     childFrame.size.width = self.contentView.frame.size.width;
     self.containerViewController.view.frame = childFrame;
 }
+
+-(void)addView:(UIView *)view ToParentView:(UIView *) parentView{
+    
+    [parentView addSubview:view];
+    
+    [view setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                           attribute:NSLayoutAttributeTop
+                                                           relatedBy:NSLayoutRelationEqual
+                                                              toItem:parentView
+                                                           attribute:NSLayoutAttributeTop
+                                                          multiplier:1.0
+                                                            constant:0.0]];
+    
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                           attribute:NSLayoutAttributeRight
+                                                           relatedBy:NSLayoutRelationEqual
+                                                              toItem:parentView
+                                                           attribute:NSLayoutAttributeRight
+                                                          multiplier:1.0
+                                                            constant:0.0]];
+    
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                           attribute:NSLayoutAttributeBottom
+                                                           relatedBy:NSLayoutRelationEqual
+                                                              toItem:parentView
+                                                           attribute:NSLayoutAttributeBottom
+                                                          multiplier:1.0
+                                                            constant:0.0]];
+    
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                           attribute:NSLayoutAttributeLeft
+                                                           relatedBy:NSLayoutRelationEqual
+                                                              toItem:parentView
+                                                           attribute:NSLayoutAttributeLeft
+                                                          multiplier:1.0
+                                                            constant:0.0]];
+    
+}
+
 
 @end
