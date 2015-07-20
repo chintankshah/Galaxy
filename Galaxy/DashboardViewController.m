@@ -25,6 +25,8 @@
 @synthesize panGestureThirdContainer;
 @synthesize panGestureShowSecondContainer;
 @synthesize panGestureShowThirdContainer;
+@synthesize tapGestureShowFirstContainer;
+@synthesize tapGestureShowSecondContainer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -60,10 +62,8 @@
         
         
         [self.meetingTime setAttributedText:attributedText];
-        
         [self.notificationLabel setFont:[UIFont systemFontOfSize:12.0]];
         [self.meetingSubject setFont:[UIFont systemFontOfSize:12.0]];
-        
         [self.voiceCommandLabel setFont:[UIFont systemFontOfSize:12.0]];
         
         self.mikeIconHeightConstraint.constant = 30;
@@ -232,7 +232,66 @@
 
     panGestureShowSecondContainer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panShowSecondContainer:)];
     [self.showSecondContainer addGestureRecognizer:panGestureShowSecondContainer];
+    
+    
+    tapGestureShowSecondContainer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapShowSecondContainer:)];
+    [self.secondContainer addGestureRecognizer:tapGestureShowSecondContainer];
 
+    tapGestureShowFirstContainer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapShowFirstContainer:)];
+    [self.firstContainer addGestureRecognizer:tapGestureShowFirstContainer];
+    
+
+}
+-(void)tapShowSecondContainer:(UITapGestureRecognizer*)gestureRecognizer{
+    
+    CGPoint touchPoint = [gestureRecognizer locationInView: self.secondContainer];
+    
+    if (touchPoint.x <= (THIRD_CONTAINER_LEADING_SPACE-SECOND_CONTAINER_LEADING_SPACE)) {
+        
+        //close third container completely
+        
+        if(self.thirdContainerLeadingSpace.constant != self.view.bounds.size.width){
+            
+            [UIView animateWithDuration:0.2 animations:^{
+                [[self thirdContainerLeadingSpace] setConstant: self.view.bounds.size.width];
+                [self.showThirdContainer setHidden:NO];
+                [self.view layoutIfNeeded];
+            }];
+            
+        }
+        
+    }
+    
+}
+
+
+-(void)tapShowFirstContainer:(UITapGestureRecognizer*)gestureRecognizer{
+    
+    CGPoint touchPoint = [gestureRecognizer locationInView: self.firstContainer];
+    
+    if (touchPoint.x <= SECOND_CONTAINER_LEADING_SPACE) {
+        
+        //close second container completely
+        
+        [UIView animateWithDuration:0.2 animations:^{
+            
+            [[self secondContainerLeadingSpace] setConstant: self.view.bounds.size.width];
+            [[self secondContainerTrailingSpace] setConstant: -(self.view.bounds.size.width-SECOND_CONTAINER_LEADING_SPACE)];
+            
+            [[self thirdContainerLeadingSpace] setConstant: self.view.bounds.size.width];
+            
+            [[self showSecondContainerTrailingSpace] setConstant:0];
+            [self.showSecondContainer setHidden:NO];
+            
+            [[self showThirdContainerTrailingSpace] setConstant:0];
+            [self.showThirdContainer setHidden:NO];
+            
+            [self.view layoutIfNeeded];
+            
+        }];
+        
+    }
+    
 }
 
 -(void)panShowThirdContainer:(UIPanGestureRecognizer*)gestureRecognizer{
@@ -252,7 +311,10 @@
         
         
         
-    } else if (translation.x < 0 && gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+    } else if (translation.x < 0
+               && (gestureRecognizer.state == UIGestureRecognizerStateEnded
+                   || gestureRecognizer.state == UIGestureRecognizerStateFailed
+                   || gestureRecognizer.state == UIGestureRecognizerStateCancelled)) {
         
         if(self.thirdContainerLeadingSpace.constant > (self.view.bounds.size.width+THIRD_CONTAINER_LEADING_SPACE)/2){
             //close third container completely
@@ -297,7 +359,22 @@
 -(void)panShowSecondContainer:(UIPanGestureRecognizer*)gestureRecognizer{
     
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
+    CGPoint velocity = [gestureRecognizer velocityInView:gestureRecognizer.view];
     
+    NSLog(@"velocity: %f", velocity.x);
+    if(velocity.x < -1500){
+        
+//        NSLog(@"Opening second container completely");
+//        [[self secondContainerLeadingSpace] setConstant: SECOND_CONTAINER_LEADING_SPACE];
+//        [[self secondContainerTrailingSpace] setConstant: 0];
+//        
+////        [self.view layoutIfNeeded];
+//        
+//        [[self showSecondContainerTrailingSpace] setConstant:0];
+//        [self.showSecondContainer setHidden:YES];
+
+    }
+
     if (translation.x < 0 && gestureRecognizer.state == UIGestureRecognizerStateChanged) {
         
         //show second container if closed else show third container
@@ -322,8 +399,12 @@
         
         
         
-    } else if (translation.x < 0 && gestureRecognizer.state == UIGestureRecognizerStateEnded) {
-        
+    } else if (translation.x < 0
+               && (gestureRecognizer.state == UIGestureRecognizerStateEnded
+                   || gestureRecognizer.state == UIGestureRecognizerStateFailed
+                   || gestureRecognizer.state == UIGestureRecognizerStateCancelled)) {
+                   
+        NSLog(@"UIGestureRecognizerStateEnded called");
         if(self.secondContainerLeadingSpace.constant > (self.view.bounds.size.width+SECOND_CONTAINER_LEADING_SPACE)/2){
             //close second container completely
             
@@ -413,7 +494,7 @@
     
     if(velocity.x > 1500){
         //close second container completely
-        
+//        NSLog(@"close second container completely");
         [[self secondContainerLeadingSpace] setConstant: self.view.bounds.size.width];
         [[self secondContainerTrailingSpace] setConstant: -(self.view.bounds.size.width-SECOND_CONTAINER_LEADING_SPACE)];
         
@@ -442,7 +523,10 @@
             self.thirdContainerLeadingSpace.constant = THIRD_CONTAINER_LEADING_SPACE + translation.x;
         
         
-    } else if (translation.x > 0 && gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+    } else if (translation.x > 0
+               && (gestureRecognizer.state == UIGestureRecognizerStateEnded
+                   || gestureRecognizer.state == UIGestureRecognizerStateFailed
+                   || gestureRecognizer.state == UIGestureRecognizerStateCancelled)) {
         
         if(self.secondContainerLeadingSpace.constant > (self.view.bounds.size.width+SECOND_CONTAINER_LEADING_SPACE)/2){
             //close second container completely
@@ -511,7 +595,10 @@
         if(self.thirdContainerLeadingSpace.constant != self.view.bounds.size.width)
             self.thirdContainerLeadingSpace.constant = THIRD_CONTAINER_LEADING_SPACE + translation.x;
         
-    } else if (translation.x > 0 && gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+    } else if (translation.x > 0
+               && (gestureRecognizer.state == UIGestureRecognizerStateEnded
+                   || gestureRecognizer.state == UIGestureRecognizerStateFailed
+                   || gestureRecognizer.state == UIGestureRecognizerStateCancelled)) {
         
         if(self.thirdContainerLeadingSpace.constant > (self.view.bounds.size.width+THIRD_CONTAINER_LEADING_SPACE)/2){
             //close third container completely
@@ -571,4 +658,28 @@
     self.upcomingMeetingModel = [service getUpcomingMeetingModel];
 }
 
+- (IBAction)showSecondContainerAction:(id)sender {
+    //open second container completely
+    
+    [UIView animateWithDuration:0.1 animations:^{
+        [[self secondContainerLeadingSpace] setConstant: SECOND_CONTAINER_LEADING_SPACE];
+        [[self showSecondContainerTrailingSpace] setConstant:0];
+        [self.showSecondContainer setHidden:YES];
+        [self.view layoutIfNeeded];
+    }];
+    
+}
+
+- (IBAction)showThirdContainerAction:(id)sender {
+    //open third container completely
+    
+    [UIView animateWithDuration:0.1 animations:^{
+        [[self thirdContainerLeadingSpace] setConstant: THIRD_CONTAINER_LEADING_SPACE];
+        [[self showThirdContainerTrailingSpace] setConstant:0];
+        [self.showThirdContainer setHidden:YES];
+        [self.view layoutIfNeeded];
+        
+    }];
+
+}
 @end

@@ -117,7 +117,7 @@
     
     [self.collectionView reloadData];
     
-    [UIView animateWithDuration:0.6 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         [self.view layoutIfNeeded];
         [self.collectionView reloadData];
     }  completion:^(BOOL finished){

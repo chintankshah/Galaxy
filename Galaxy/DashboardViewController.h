@@ -48,8 +48,14 @@
 @property (strong, nonatomic) UIPanGestureRecognizer *panGestureSecondContainer;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGestureThirdContainer;
 
+@property (strong, nonatomic) UITapGestureRecognizer *tapGestureShowFirstContainer;
+@property (strong, nonatomic) UITapGestureRecognizer *tapGestureShowSecondContainer;
+
 @property (strong, nonatomic) UIPanGestureRecognizer *panGestureShowSecondContainer;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGestureShowThirdContainer;
+
+- (IBAction)showSecondContainerAction:(id)sender;
+- (IBAction)showThirdContainerAction:(id)sender;
 
 @property (strong, nonatomic) NotificationsView *notificationView;
 

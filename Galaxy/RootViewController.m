@@ -17,7 +17,7 @@
 
 @implementation RootViewController
 
-#define RIGHT_GESTURE_LIMIT 50
+#define RIGHT_GESTURE_LIMIT 75
 #define MENU_HEIGHT 50
 #define MENU_HEIGHT_IPHONE4_AND_BELOW 40
 
@@ -34,6 +34,7 @@ bool menuOpened = NO;
     globalPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGlobalPanGesture:)];
     [self.contentView addGestureRecognizer:globalPanGesture];
     
+    NSLog(@"width: %f", [UIScreen mainScreen].bounds.size.width);
 //    [self loadContentViewWith:@"DashboardViewController"];
 //    [self loadContentViewWith:@"CustomersViewController"];
     [self loadContentViewWith:@"LeadViewController"];
@@ -74,9 +75,9 @@ bool menuOpened = NO;
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
     CGPoint velocity = [gestureRecognizer velocityInView:gestureRecognizer.view];
     
-    //    NSLog(@"screenLocation.x : %f", screenLocation.x);
-    //    NSLog(@"location.x : %f", location.x);
-    //    NSLog(@"translation.x : %f", translation.x);
+//        NSLog(@"screenLocation.x : %f", screenLocation.x);
+//        NSLog(@"location.x : %f", location.x);
+//        NSLog(@"translation.x : %f", translation.x);
     
     if(velocity.x > 1500){
         //close right menu
@@ -87,7 +88,9 @@ bool menuOpened = NO;
         
     }
     
-    if(velocity.x < -1500){
+    if(velocity.x < -1500
+       && self.contentViewLeadingConstraint.constant < 0
+       ){
         //open right menu
         
         self.contentViewTrailingConstraint.constant = self.view.bounds.size.width-RIGHT_GESTURE_LIMIT;
