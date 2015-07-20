@@ -99,6 +99,12 @@
 		0369A2E31B4A8D3C00954B94 /* IQDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0369A2E21B4A8D3C00954B94 /* IQDropDownTextField.m */; };
 		03B6EDC61B591EAE00F35903 /* Left 4-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B6EDC41B591EAE00F35903 /* Left 4-50.png */; };
 		03B6EDC71B591EAE00F35903 /* Right 4-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B6EDC51B591EAE00F35903 /* Right 4-50.png */; };
+		03BC52891B5CD79E002A014D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC52881B5CD79E002A014D /* AVFoundation.framework */; };
+		03BC528B1B5CD7A4002A014D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC528A1B5CD7A4002A014D /* AudioToolbox.framework */; };
+		03BC52961B5CF214002A014D /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03BC52931B5CF214002A014D /* AcousticModelEnglish.bundle */; };
+		03BC52971B5CF24A002A014D /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC52911B5CF214002A014D /* OpenEars.framework */; };
+		03BC52981B5CF24A002A014D /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC52921B5CF214002A014D /* Slt.framework */; };
+		03BC52991B5CF24A002A014D /* AcousticModelEnglish.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BC52931B5CF214002A014D /* AcousticModelEnglish.bundle */; };
 		03C1D4061B3DBB2F00EBFD71 /* LeadsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C1D4041B3DBB2F00EBFD71 /* LeadsCollectionViewCell.m */; };
 		03C1D4071B3DBB2F00EBFD71 /* LeadsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C1D4051B3DBB2F00EBFD71 /* LeadsCollectionViewCell.xib */; };
 		03C1D40A1B3DC05F00EBFD71 /* Leads.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C1D4091B3DC05F00EBFD71 /* Leads.json */; };
@@ -423,6 +429,13 @@
 		0369A2E21B4A8D3C00954B94 /* IQDropDownTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQDropDownTextField.m; sourceTree = "<group>"; };
 		03B6EDC41B591EAE00F35903 /* Left 4-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left 4-50.png"; sourceTree = "<group>"; };
 		03B6EDC51B591EAE00F35903 /* Right 4-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Right 4-50.png"; sourceTree = "<group>"; };
+		03BC52881B5CD79E002A014D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		03BC528A1B5CD7A4002A014D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03BC528C1B5CD7AA002A014D /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEars.framework; path = OpenEars/OpenEars.framework; sourceTree = "<group>"; };
+		03BC528D1B5CD7AA002A014D /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slt.framework; path = OpenEars/Slt.framework; sourceTree = "<group>"; };
+		03BC52911B5CF214002A014D /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEars.framework; path = OpenEars/OpenEars.framework; sourceTree = "<group>"; };
+		03BC52921B5CF214002A014D /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slt.framework; path = OpenEars/Slt.framework; sourceTree = "<group>"; };
+		03BC52931B5CF214002A014D /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AcousticModelEnglish.bundle; path = OpenEars/AcousticModelEnglish.bundle; sourceTree = "<group>"; };
 		03C1D4031B3DBB2F00EBFD71 /* LeadsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadsCollectionViewCell.h; sourceTree = "<group>"; };
 		03C1D4041B3DBB2F00EBFD71 /* LeadsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadsCollectionViewCell.m; sourceTree = "<group>"; };
 		03C1D4051B3DBB2F00EBFD71 /* LeadsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeadsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -555,6 +568,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BC528B1B5CD7A4002A014D /* AudioToolbox.framework in Frameworks */,
+				03BC52891B5CD79E002A014D /* AVFoundation.framework in Frameworks */,
+				03BC52971B5CF24A002A014D /* OpenEars.framework in Frameworks */,
+				03BC52981B5CF24A002A014D /* Slt.framework in Frameworks */,
+				03BC52991B5CF24A002A014D /* AcousticModelEnglish.bundle in Frameworks */,
 				03D83C941B5775B700792474 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				03412F571B45079D00459FBF /* Accelerate.framework in Frameworks */,
 				03412F551B45079700459FBF /* QuartzCore.framework in Frameworks */,
@@ -777,6 +795,10 @@
 		03335D2F1B3A9713004CB4FB = {
 			isa = PBXGroup;
 			children = (
+				03BC528C1B5CD7AA002A014D /* OpenEars.framework */,
+				03BC528D1B5CD7AA002A014D /* Slt.framework */,
+				03BC528A1B5CD7A4002A014D /* AudioToolbox.framework */,
+				03BC52881B5CD79E002A014D /* AVFoundation.framework */,
 				03412F561B45079D00459FBF /* Accelerate.framework */,
 				03412F541B45079700459FBF /* QuartzCore.framework */,
 				03412F271B45038200459FBF /* Libraries */,
@@ -934,6 +956,7 @@
 		03412F271B45038200459FBF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				03BC52901B5CF203002A014D /* OpenEars */,
 				03C8B4FD1B4AD68000F77246 /* MPGTextField */,
 				0369A2E01B4A8D3C00954B94 /* IQDropDownTextField */,
 				03412F591B450B7600459FBF /* CorePlot */,
@@ -1072,6 +1095,16 @@
 				0369A2E21B4A8D3C00954B94 /* IQDropDownTextField.m */,
 			);
 			path = IQDropDownTextField;
+			sourceTree = "<group>";
+		};
+		03BC52901B5CF203002A014D /* OpenEars */ = {
+			isa = PBXGroup;
+			children = (
+				03BC52911B5CF214002A014D /* OpenEars.framework */,
+				03BC52921B5CF214002A014D /* Slt.framework */,
+				03BC52931B5CF214002A014D /* AcousticModelEnglish.bundle */,
+			);
+			name = OpenEars;
 			sourceTree = "<group>";
 		};
 		03C1D4011B3DBAE700EBFD71 /* Views */ = {
@@ -1553,6 +1586,7 @@
 				03412F0C1B43CE7F00459FBF /* MenuTableViewCell.xib in Resources */,
 				03412F211B4423BE00459FBF /* Filter Filled-100.png in Resources */,
 				0369A2D51B4A689B00954B94 /* Speech Bubble Filled-100.png in Resources */,
+				03BC52961B5CF214002A014D /* AcousticModelEnglish.bundle in Resources */,
 				03412F141B43F38800459FBF /* RSS-100.png in Resources */,
 				03C1D4491B3EBB2000EBFD71 /* LeadDetailViewController.xib in Resources */,
 				03412F151B43F38800459FBF /* Combo Chart-100.png in Resources */,
@@ -1797,6 +1831,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenEars",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -1819,6 +1857,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenEars",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

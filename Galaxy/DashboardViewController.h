@@ -11,9 +11,19 @@
 #import "NotificationArrayModel.h"
 #import "UpcomingMeetingModel.h"
 #import "BaseViewController.h"
+#import <OpenEars/OEEventsObserver.h>
+#import <OpenEars/OEPocketsphinxController.h>
+#import <OpenEars/OEFliteController.h>
+#import <OpenEars/OELanguageModelGenerator.h>
+#import <OpenEars/OELogging.h>
+#import <OpenEars/OEAcousticModel.h>
+#import <Slt/Slt.h>
 
-@interface DashboardViewController : UIViewController <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource>
 
+@interface DashboardViewController : UIViewController <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource, OEEventsObserverDelegate>
+
+
+@property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) IBOutlet UIView *firstContainer;
 @property (strong, nonatomic) IBOutlet UIView *secondContainer;
 @property (strong, nonatomic) IBOutlet UIView *thirdContainer;
@@ -61,6 +71,20 @@
 
 @property (strong, nonatomic) NotificationArrayModel *notificationsArrayModel;
 @property (strong, nonatomic) UpcomingMeetingModel *upcomingMeetingModel;
+- (IBAction)toggleVoiceCommand:(id)sender;
 
+// These three are the important OpenEars objects that this class demonstrates the use of.
+@property (nonatomic, strong) Slt *slt;
+
+@property (nonatomic, strong) OEEventsObserver *openEarsEventsObserver;
+@property (nonatomic, strong) OEPocketsphinxController *pocketsphinxController;
+@property (nonatomic, strong) OEFliteController *fliteController;
+
+@property (nonatomic, assign) BOOL usingStartingLanguageModel;
+@property (nonatomic, assign) int restartAttemptsDueToPermissionRequests;
+@property (nonatomic, assign) BOOL startupFailedDueToLackOfPermissions;
+
+@property (nonatomic, copy) NSString *pathToFirstDynamicallyGeneratedLanguageModel;
+@property (nonatomic, copy) NSString *pathToFirstDynamicallyGeneratedDictionary;
 
 @end

@@ -35,9 +35,9 @@ bool menuOpened = NO;
     [self.contentView addGestureRecognizer:globalPanGesture];
     
     NSLog(@"width: %f", [UIScreen mainScreen].bounds.size.width);
-//    [self loadContentViewWith:@"DashboardViewController"];
+    [self loadContentViewWith:@"DashboardViewController"];
 //    [self loadContentViewWith:@"CustomersViewController"];
-    [self loadContentViewWith:@"LeadViewController"];
+//    [self loadContentViewWith:@"LeadViewController"];
     
 }
 
@@ -391,6 +391,8 @@ bool menuOpened = NO;
 }
 
 -(void)loadContentViewWith:(NSString *)nib{
+    
+    NSLog(@"Entering RootController-loadContentViewWith() with nib: %@", nib);
     
     //create view controller from nib
     
