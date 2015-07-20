@@ -705,7 +705,7 @@
 - (IBAction)showSecondContainerAction:(id)sender {
     //open second container completely
     
-    [UIView animateWithDuration:0.1 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         [[self secondContainerLeadingSpace] setConstant: SECOND_CONTAINER_LEADING_SPACE];
         [[self showSecondContainerTrailingSpace] setConstant:0];
         [self.showSecondContainer setHidden:YES];
@@ -717,7 +717,7 @@
 - (IBAction)showThirdContainerAction:(id)sender {
     //open third container completely
     
-    [UIView animateWithDuration:0.1 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         [[self thirdContainerLeadingSpace] setConstant: THIRD_CONTAINER_LEADING_SPACE];
         [[self showThirdContainerTrailingSpace] setConstant:0];
         [self.showThirdContainer setHidden:YES];
@@ -750,7 +750,10 @@
     
     NSError *error = nil;
     error = [[OEPocketsphinxController sharedInstance] stopListening];
-    if(error)NSLog(@"Error stopping listening in stopButtonAction: %@", error);
+    if(error)
+        NSLog(@"Error stopping listening in stopButtonAction: %@", error);
+    else
+        [self.voiceCommandLabel setText:@"Tap to start listening"];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate.rootController loadContentViewWith:controller];
@@ -765,12 +768,12 @@
     
     if ([hypothesis isEqualToString:@"LEAD"]) {
         
-//        [self loadController:@"LeadViewController"];
+        [self loadController:@"LeadViewController"];
         
     }
     else if ([hypothesis isEqualToString:@"CUSTOMER"]) {
         
-//        [self loadController:@"CustomersViewController"];
+        [self loadController:@"CustomersViewController"];
         
     }
     
@@ -796,13 +799,13 @@
         if(self.restartAttemptsDueToPermissionRequests == 1 && self.startupFailedDueToLackOfPermissions) { // If we get here because there was an attempt to start which failed due to lack of permissions, and now permissions have been requested and they returned true, we restart exactly once with the new permissions.
             
             if(![OEPocketsphinxController sharedInstance].isListening) { // If there was no error and we aren't listening, start listening.
-//                [[OEPocketsphinxController sharedInstance]
-//                 startListeningWithLanguageModelAtPath:self.pathToFirstDynamicallyGeneratedLanguageModel
-//                 dictionaryAtPath:self.pathToFirstDynamicallyGeneratedDictionary
-//                 acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"]
-//                 languageModelIsJSGF:FALSE]; // Start speech recognition.
-//                
-//                self.startupFailedDueToLackOfPermissions = FALSE;
+                [[OEPocketsphinxController sharedInstance]
+                 startListeningWithLanguageModelAtPath:self.pathToFirstDynamicallyGeneratedLanguageModel
+                 dictionaryAtPath:self.pathToFirstDynamicallyGeneratedDictionary
+                 acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"]
+                 languageModelIsJSGF:FALSE]; // Start speech recognition.
+                
+                self.startupFailedDueToLackOfPermissions = FALSE;
             }
         }
     }
