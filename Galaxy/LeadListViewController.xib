@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeadListViewController">
@@ -42,7 +42,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hm-tA-tOg">
-                                    <rect key="frame" x="500" y="40" width="30" height="30"/>
+                                    <rect key="frame" x="500" y="30" width="30" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="5Id-iH-Hpu"/>
                                         <constraint firstAttribute="width" constant="30" id="J55-74-GBB"/>
@@ -63,7 +63,13 @@
                                 <constraint firstItem="6Hm-tA-tOg" firstAttribute="top" secondItem="Fva-Rl-x9X" secondAttribute="top" constant="40" id="Scv-SJ-zI5"/>
                                 <constraint firstAttribute="centerX" secondItem="E1J-4C-xLF" secondAttribute="centerX" constant="25" id="ZvI-81-SSk"/>
                                 <constraint firstAttribute="trailing" secondItem="6Hm-tA-tOg" secondAttribute="trailing" constant="20" id="chH-Ge-tYm"/>
+                                <constraint firstItem="6Hm-tA-tOg" firstAttribute="centerY" secondItem="E1J-4C-xLF" secondAttribute="centerY" id="qAh-z8-hzP"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Scv-SJ-zI5"/>
+                                </mask>
+                            </variation>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ny-yF-JEy">
                             <rect key="frame" x="-50" y="240" width="50" height="360"/>
@@ -105,11 +111,12 @@
                             </connections>
                         </collectionView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-3u-SZV">
-                            <rect key="frame" x="10" y="20" width="30" height="30"/>
+                            <rect key="frame" x="0.0" y="25" width="40" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="4EM-GM-e63"/>
-                                <constraint firstAttribute="width" constant="30" id="vbN-Bc-pes"/>
+                                <constraint firstAttribute="height" constant="40" id="4EM-GM-e63"/>
+                                <constraint firstAttribute="width" constant="40" id="vbN-Bc-pes"/>
                             </constraints>
+                            <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                             <state key="normal" image="Filter Filled-100.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -121,17 +128,23 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="tjh-WT-v5H" firstAttribute="leading" secondItem="1ny-yF-JEy" secondAttribute="trailing" constant="20" id="6gP-ej-gw6"/>
-                        <constraint firstItem="VGm-3u-SZV" firstAttribute="leading" secondItem="PAm-pu-h7h" secondAttribute="leading" constant="10" id="I02-qH-iJ4"/>
+                        <constraint firstItem="VGm-3u-SZV" firstAttribute="leading" secondItem="PAm-pu-h7h" secondAttribute="leading" id="I02-qH-iJ4"/>
                         <constraint firstItem="VGm-3u-SZV" firstAttribute="top" secondItem="PAm-pu-h7h" secondAttribute="top" constant="20" id="Itu-ZD-iRh"/>
                         <constraint firstAttribute="trailing" secondItem="tjh-WT-v5H" secondAttribute="trailing" constant="20" id="LGY-Lt-d2r"/>
                         <constraint firstAttribute="trailing" secondItem="Fva-Rl-x9X" secondAttribute="trailing" id="O4f-GA-JHJ"/>
                         <constraint firstItem="tjh-WT-v5H" firstAttribute="top" secondItem="PAm-pu-h7h" secondAttribute="top" constant="100" id="T5K-5j-BbT"/>
+                        <constraint firstItem="VGm-3u-SZV" firstAttribute="centerY" secondItem="E1J-4C-xLF" secondAttribute="centerY" id="THg-kV-Xcq"/>
                         <constraint firstAttribute="bottom" secondItem="1ny-yF-JEy" secondAttribute="bottom" id="c7N-nI-suR"/>
                         <constraint firstItem="Fva-Rl-x9X" firstAttribute="leading" secondItem="PAm-pu-h7h" secondAttribute="leading" constant="50" id="cjs-HX-Xtn"/>
                         <constraint firstItem="1ny-yF-JEy" firstAttribute="leading" secondItem="PAm-pu-h7h" secondAttribute="leading" constant="-50" id="eD4-nG-IDO"/>
                         <constraint firstAttribute="bottom" secondItem="tjh-WT-v5H" secondAttribute="bottom" id="fIt-eL-EdJ"/>
                         <constraint firstItem="Fva-Rl-x9X" firstAttribute="top" secondItem="PAm-pu-h7h" secondAttribute="top" id="pju-xh-BA7"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Itu-ZD-iRh"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
