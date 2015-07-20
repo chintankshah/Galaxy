@@ -113,7 +113,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listening..." textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK3-zO-lPy">
-                                    <rect key="frame" x="200" y="490" width="100" height="21"/>
+                                    <rect key="frame" x="208" y="490" width="84" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="D0u-XD-tsb"/>
                                         <constraint firstAttribute="height" constant="21" id="ZpF-bQ-uns"/>
@@ -121,6 +121,11 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="D0u-XD-tsb"/>
+                                        </mask>
+                                    </variation>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

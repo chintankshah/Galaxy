@@ -124,6 +124,11 @@
     
     [[OEPocketsphinxController sharedInstance] setActive:TRUE error:nil]; // Call this once before setting properties of the OEPocketsphinxController instance.
     
+    if([OEPocketsphinxController sharedInstance].isListening) { // Stop if we are currently listening.
+        error = [[OEPocketsphinxController sharedInstance] stopListening];
+        if(error)NSLog(@"Error stopping listening in stopButtonAction: %@", error);
+    }
+    
 }
 
 -(void)setUpNotesView{
@@ -760,12 +765,12 @@
     
     if ([hypothesis isEqualToString:@"LEAD"]) {
         
-        [self loadController:@"LeadViewController"];
+//        [self loadController:@"LeadViewController"];
         
     }
     else if ([hypothesis isEqualToString:@"CUSTOMER"]) {
         
-        [self loadController:@"CustomersViewController"];
+//        [self loadController:@"CustomersViewController"];
         
     }
     
