@@ -396,7 +396,7 @@ bool menuOpened = NO;
     
     //create view controller from nib
     
-    self.containerViewController = [[ContainerViewController alloc] initWithNibName:nib bundle:nil];
+     self.containerViewController = [[NSClassFromString(nib) alloc] initWithNibName:nib bundle:nil];
     
     //remove already existing sub view if exist
     NSArray *viewsToRemove = [self.contentView subviews];

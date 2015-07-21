@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B4F423D3-FA48-465A-AF51-551C2935C2ED</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Galaxy</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>93EBD7464DAB8E30E397F174F927F57290E2BCE3</key>
 		<string>https://github.com/chintankshah/Galaxy.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Galaxy.xcodeproj/project.xcworkspace</string>
+	<string>Galaxy.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>93EBD7464DAB8E30E397F174F927F57290E2BCE3</key>

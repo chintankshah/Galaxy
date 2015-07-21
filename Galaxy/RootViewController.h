@@ -24,14 +24,13 @@
 
 @property (strong, nonatomic) UIPanGestureRecognizer *globalPanGesture;
 
-@property (strong, nonatomic) ContainerViewController *containerViewController;
+@property (strong, nonatomic) UIViewController *containerViewController;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuTrailingConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuHeightConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *menuWidthConstraint;
 
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
-
 
 -(IBAction)toggleMenu:(id)sender;
 -(void)loadContentViewWith:(NSString *)nib;
